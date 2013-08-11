@@ -1,0 +1,26 @@
+<h2>Filters</h2>
+
+{{#linkTo "new_filter"}}New Filter{{/linkTo}}
+
+<table>
+  <thead>
+    <th>id</th>
+  </thead>
+  <tbody>
+    {{#each filter in controller}}
+    <tr>
+      <td>{{filter.name}}</td>
+      <td>{{#linkTo "filter" filter}}view{{/linkTo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+{{partial "testp"}}
+
+
+
+ <script type="text/x-handlebars" data-template-name="testp">
+        Some Html or Template Content ...
+    </script>

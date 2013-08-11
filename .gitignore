@@ -1,0 +1,26 @@
+# User specific & automatically generated files #
+#################################################
+/api/app/Config/database.php
+/api/app/Controller/PublicationsController.php
+/api/app/Controller/AuthorsController.php
+/api/app/Config/core.php
+/api/app/tmp
+/api/lib/Cake/Console/Templates/skel/tmp/
+/api/plugins
+/api/vendors
+/api/build
+/api/dist
+/api/tags
+/api/app/webroot/files/
+/api/app/webroot/plosexport/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

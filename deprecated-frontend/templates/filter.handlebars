@@ -1,0 +1,13 @@
+<h2>Filter</h2>
+
+<p>
+  <b>id:</b> {{id}} <br />
+  <b>name:</b> {{name}} <br />
+  <b>abstractContains:</b> {{abstractContains}} <br />
+  <b>titleContains:</b> {{titleContains}} <br />
+</p>
+
+
+{{#linkTo "filters"}}←All Filters{{/linkTo}}
+{{#linkTo "edit_filter" model}}Edit{{/linkTo}}
+<a href="#" {{action "destroy"}}>Destroy</a>

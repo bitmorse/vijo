@@ -1,0 +1,25 @@
+<h2>Filter</h2>
+
+<form {{action save on="submit"}}>
+  
+  <p>
+    <label for="name">name</label><br>
+    {{view Ember.TextField valueBinding="name" id="name"}}
+  </p>
+  
+  <p>
+    <label for="abstractContains">abstractContains</label><br>
+    {{view Ember.TextField valueBinding="abstractContains" id="abstractContains"}}
+  </p>
+  
+  <p>
+    <label for="titleContains">titleContains</label><br>
+    {{view Ember.TextField valueBinding="titleContains" id="titleContains"}}
+  </p>
+
+  <p>
+    <button type="submit">Save</button>
+  </p>
+
+</form>
+

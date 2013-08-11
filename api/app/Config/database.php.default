@@ -1,0 +1,39 @@
+<?php
+
+class DATABASE_CONFIG {
+
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => '',
+		'password' => '',
+		'database' => '',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+
+	//For patterns integration only: MySQL db for qscience patterns instance.
+	public $patternsInnAcDb = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => '',
+		'password' => '',
+		'database' => 'patterns',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+
+
+	public $mongodb1 = array(
+        'datasource' => 'Mongodb.MongodbSource',
+        'database' => 'virtualjournal',
+        'host' => 'localhost',
+        'port' => 27017,
+        'persistent' => true,
+        'replicaset' => array('host' => 'localhost:27017', 
+                              'options' => array('replicaSet' => 'rs0')
+                     )
+    );
+}
