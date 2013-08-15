@@ -22,6 +22,7 @@ class UsersController extends AppController {
 
         // In state=1 the next request should include an oauth_token.
         // If it doesn't go back to 0
+        if(isset($_GET['oauth_token'])){header("Location: /");}
         if(!isset($_GET['oauth_token']) && $this->Session->read('state')==1) $this->Session->write('state', 0);
         try {
           $oauth = new OAuth($conskey,$conssec,OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_URI);
@@ -64,6 +65,8 @@ class UsersController extends AppController {
             'innac_profile' => 'http://inn.ac/user/'.$userRaw['uid']
           ));
 
+          $this->Session->write('User', $userArr);
+
           echo json_encode($userArr);
 
         } catch(OAuthException $E) {
@@ -75,11 +78,23 @@ class UsersController extends AppController {
 
 
 
-    public function index() {
+    public function me() {
+
+        if($this->Session->read('User')){
+
+            $me = $this->Session->read('User');
+            $me['user']['id'] = 'me';
+
+            echo json_encode($me);
+        }else{
+            echo '[]';
+        }
+        
+        exit();
     }
 
     public function view($id) {
-    
+        
     }
 
     public function edit($id) {

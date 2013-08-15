@@ -15,6 +15,7 @@
             <li class="first"><span>Discover</span></li>
             <li>{{#linkTo "publications.top"}}Top rated publications{{/linkTo}}</li>
             <li>{{#linkTo "publications.latest"}}Latest publications{{/linkTo}}</li>
+
             <!-- <li>{{#linkTo "publications.controversial"}}Controversial{{/linkTo}}</li>
             <li class="last">{{#linkTo "publications.random"}}Random{{/linkTo}}</li> -->
           </ul>

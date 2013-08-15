@@ -1,5 +1,5 @@
-
 <script type="text/x-handlebars" data-template-name="virtualjournal">
+  <div id="maincontainer" class="span12" style="margin-left:0px">
   <div class="row-fluid">
 
   <h1>
@@ -64,8 +64,6 @@
  		
  	{{#each App.VirtualjournalPublicationStreamController}}
 
-
-
 	<h5>{{rank}} <i {{bindAttr title="score"}} class="icon-sign-blank"></i> <a {{bindAttr href="access_url"}} target="_blank">{{title}}</a></h5>
 	<h6>{{metrics}} | {{is_published_in}} | {{display_authors}}</h6>
 	<p class="abstract">{{abstract}}</p>
@@ -76,5 +74,5 @@
  	{{/each}} 
 
   </div>
-
+  </div>
 </script>

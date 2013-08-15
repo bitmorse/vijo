@@ -13,7 +13,6 @@
   <h1>Create a virtual journal</h1> 
 
     {{#formFor controller}}
-    
       <fieldset>
         <legend>Journal description</legend>
         {{input title hint="e.g. Prof. Nicolliers Special Interests"}}
@@ -71,6 +70,31 @@
 
 </script>
 
+
+<script type="text/x-handlebars" data-template-name="virtualjournals/alternative">
+  <h1>ALTERNATIVE FILTER</h1>
+  <hr />
+
+  Search by keyword. <br/> <i>Additional keywords will aid the search, but will be ranked with less importance.</i>
+   <br/>  <br/> 
+
+    <fieldset id="form">
+    <input class="input-large" type="text" /><select><option>Weight</option><option>10</option><option>9</option><option>8</option></select><br />
+    </fieldset>
+
+  <button onclick="$('#form').append('<input type=\'text\' /><select><option>Weight</option><option>10</option><option>9</option><option>8</option></select><br />')">Add a keyword</button>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <button>Search (NOT functional)</button>
+
+</script>
 
 
 <script type="text/x-handlebars" data-template-name="virtualjournals">

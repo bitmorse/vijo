@@ -28,13 +28,19 @@
               {{view App.SearchBoxView id="search"}}
 
               {{#if isSearching}}
+                  {{#view App.SearchBoxResultsView}}
                   <ul id="searchAutosuggest">
+
+                    <li>{{#each model}} {{title}} {{/each}}</li>
+
                     <li class="author"><i class="icon-user"></i><small>Author</small><a href="">Dirk Helbing</a> </li>
                     <li class="author"><i class="icon-user"></i><small>Author</small><a href="">Stefano Balietti</a> </li>
                     <li class="paper"><i class="icon-file"></i><small>Paper</small><a href="">How to create an innovation accelerator</a></li>
                     <li class="filter"><i class="icon-search"></i><small>Filter</small><a href="">Biology</a></li>
                   </ul>
+                  {{/view}}
               {{/if}}
+
             </div>
 
 
@@ -62,9 +68,10 @@
                   </ul>
                 </li>
 
-
-                <li><a href="#/users/activity">&#127758;</a></li>
-                <li><a href="#/users/me"><img src="http://www.gravatar.com/avatar/3a9358a3be54a38943a2e849ddc2b901" width="30"></a></li>
+                {{#if isAuthenticated}}
+                  <li><a href="#/users/activity">&#127758;</a></li>
+                  <li><a href="#/users/me"><img src="http://www.gravatar.com/avatar/3a9358a3be54a38943a2e849ddc2b901" width="30"></a></li>
+                {{/if}}
               </ul>
                 <div class="dropdown">
                  
@@ -91,6 +98,7 @@
   ?>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/lib/jquery.timeago.js"></script>
   <script src="/js/lib/bootstrap-dropdown.js"></script>
   
   <script src="/js/lib/handlebars-1.0.0-rc.3.js"></script>
@@ -98,7 +106,7 @@
   <script src="/js/lib/ember-data.rev12.js"></script>
   <script src="/js/lib/ember-easyForm-0.3.2.js"></script>
 
-  <script src="/js/app.js"></script>
+  <script src="/js/app.js.php"></script>
 
   <!-- Piwik -->
   <script type="text/javascript">
