@@ -7,16 +7,15 @@ This package consists of:
 - CakePHP Backend: /api
 
 
-Requirements
-==
+## Requirements
 - PHP5/Apache2
 - QScience (http://inn.ac) OAuth Consumer
 - MongoDB (with a publications collection)
 - Elasticsearch (indexing the mongodb publications collection)
 
 
-Installation
-==
+## Installation
+
 
 This package will currently not work if you don't have MongoDB and Elasticsearch already up and running.
 
@@ -33,8 +32,8 @@ to
 and change the respective values within.
 
 
-API Documentation
-==
+## API Documentation
+
 
 <table>
     <tr>
@@ -55,17 +54,20 @@ API Documentation
     </tr>
 
     <tr>
-    	<td>List all public journals</td>
-    	<td>/api/virtualjournals.json</td>
-    	<td>GET</td>
-    	<td></td>
-    	<td></td>
+        <td>List all public journals</td>
+        <td>/api/virtualjournals.json</td>
+        <td>GET</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-    	<td>List the results (publications) of a virtual journal</td>
-    	<td>/api/virtualjournals/[virtualjournal_id].json</td>
-    	<td>GET</td>
-    	<td></td>
-    	<td></td>
+        <td>List the results (publications) of a virtual journal</td>
+        <td>/api/virtualjournals/[virtualjournal_id].json</td>
+        <td>GET</td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
+
 </table>
