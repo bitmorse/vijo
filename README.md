@@ -31,3 +31,47 @@ to
 /api/app/Config/core.php
 
 and change the respective values within.
+
+
+API Documentation
+==
+
+Create a new virtual journal (filter)
+--
+
+URL:
+/api/virtualjournals.json
+
+Method:
+POST
+
+Data (replace null with your values):
+{"virtualjournal":{"title":null,"description":null,"authors":null,"discipline":null,"title_contains":null,"abstract_contains":null,"papers_similar_to_author":null,"papers_similar_to_keywords":null,"minimum_amount_of_tweets":null,"created":null,"institution":null,"is_published_in":null}}
+
+Return value:
+- virtualjournal_id
+
+
+
+List all public journals
+--
+
+URL:
+- /api/virtualjournals.json
+
+Method:
+- GET
+
+
+
+
+Show the results (publications) of a virtual journal:
+--
+
+URL:
+/api/virtualjournals/[virtualjournal_id].json
+
+
+Method:
+- GET
+
