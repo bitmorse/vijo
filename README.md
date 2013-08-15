@@ -36,42 +36,36 @@ and change the respective values within.
 API Documentation
 ==
 
-Create a new virtual journal (filter)
--
+<table>
+    <tr>
+        <th>Action</th>
+        <th>URL</th>
+        <th>Method</th>
+        <th>Parameters</th>
+        <th>Return values</th>
+    </tr>
+    <tr>
+        <td>Create a new virtual journal</td>
+        <td>/api/virtualjournals.json</td>
+        <td>POST</td>
+        <td>
+        Replace null with your value: 
+        {"virtualjournal":{"title":null,"description":null,"authors":null,"discipline":null,"title_contains":null,"abstract_contains":null,"papers_similar_to_author":null,"papers_similar_to_keywords":null,"minimum_amount_of_tweets":null,"created":null,"institution":null,"is_published_in":null}}</td>
+        <td>[virtualjournal_id]</td>
+    </tr>
 
-URL:
-- /api/virtualjournals.json
-
-Method:
-- POST
-
-Data (replace null with your values):
-- {"virtualjournal":{"title":null,"description":null,"authors":null,"discipline":null,"title_contains":null,"abstract_contains":null,"papers_similar_to_author":null,"papers_similar_to_keywords":null,"minimum_amount_of_tweets":null,"created":null,"institution":null,"is_published_in":null}}
-
-Return value:
-- virtualjournal_id
-
-
-
-List all public journals
--
-
-URL:
-- /api/virtualjournals.json
-
-Method:
-- GET
-
-
-
-
-Show the results (publications) of a virtual journal:
--
-
-URL:
-- /api/virtualjournals/[virtualjournal_id].json
-
-
-Method:
-- GET
-
+    <tr>
+    	<td>List all public journals</td>
+    	<td>/api/virtualjournals.json</td>
+    	<td>GET</td>
+    	<td></td>
+    	<td></td>
+    </tr>
+    <tr>
+    	<td>List the results (publications) of a virtual journal</td>
+    	<td>/api/virtualjournals/[virtualjournal_id].json</td>
+    	<td>GET</td>
+    	<td></td>
+    	<td></td>
+    </tr>
+</table>
