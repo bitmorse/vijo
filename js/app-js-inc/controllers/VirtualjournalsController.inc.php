@@ -20,7 +20,6 @@ App.VirtualjournalEditController = Ember.ObjectController.extend({
   },
   contains_authors_in_references_weights: [1,10,100]
 
-
 });
 
 
