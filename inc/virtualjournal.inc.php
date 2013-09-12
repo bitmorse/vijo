@@ -9,8 +9,8 @@
    
   <div class="btn-group"> 
     {{#linkTo virtualjournals class="btn btn-small"}}<i class="icon-arrow-left"></i> Back to List{{/linkTo}}
-    
-    {{#if model.belongs_to_logged_in_user}}
+      
+    {{#if belongs_to_logged_in_user}}
       {{#linkTo "virtualjournal_edit" model class="btn btn-small"}}<i class="icon-edit"></i> Edit{{/linkTo}}
       {{#linkTo "virtualjournal_delete" model class="btn btn-small btn-danger"}}<i class="icon-remove"></i> Delete{{/linkTo}}
     {{/if}}
@@ -20,7 +20,10 @@
   <br />
   <br />
   <p>{{description}}</p>
-
+  <p class="journaltags">
+    {{#if App.VirtualjournalPublicationStreamController.termsFacet}}<strong>Most used words in titles of these papers:</strong><br/>{{/if}}
+    {{App.VirtualjournalPublicationStreamController.termsFacet}}  
+  </p>
 
 
   <table id="filterdetails" class="table hide">

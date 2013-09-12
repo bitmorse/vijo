@@ -33,6 +33,7 @@ class VirtualjournalsController extends AppController {
                 'id'=> @$virtualjournal['Virtualjournal']['_id'], 
                 'title' => @$virtualjournal['Virtualjournal']['title'], 
                 'description' => @$virtualjournal['Virtualjournal']['description'],
+                'views' => @$virtualjournal['Virtualjournal']['views'],
                 'contains_authors_in_references' => @$virtualjournal['Virtualjournal']['contains_authors_in_references'],
                 'contains_keywords_important' => @$virtualjournal['Virtualjournal']['contains_keywords_important'],
                 'contains_keywords_normal' => @$virtualjournal['Virtualjournal']['contains_keywords_normal'],
@@ -55,7 +56,12 @@ class VirtualjournalsController extends AppController {
     public function view($id) {
         $virtualjournal = $this->Virtualjournal->find('first', array('conditions' => array('_id' => $id)));
 
+        //update the viewcount
+        $this->Virtualjournal->id = $id;
+        $virtualjournal['Virtualjournal']['views'] = $virtualjournal['Virtualjournal']['views']+1;
+        $this->Virtualjournal->save($virtualjournal);
 
+        //tell the frontend if this vijo is allowed to be edited
         if(@$virtualjournal['Virtualjournal']['created_by'] == $this->Session->read('User.user.username')){
             $belongs_to_logged_in_user = true;
         }else{
@@ -69,13 +75,14 @@ class VirtualjournalsController extends AppController {
         $references =  rtrim(@$virtualjournal['Virtualjournal']['contains_authors_in_references']);
         $references_weight = $virtualjournal['Virtualjournal']['contains_authors_in_references_weight'];
 
-        if($keywords5){$keywords5 = str_replace("\n", " OR ", $keywords5); $q_keywords .= '('.$keywords5.')^5 '; }else{$q_keywords .= '(*) ';}
+        if($keywords5){$keywords5 = str_replace("\n", " OR ", $keywords5); $q_keywords .= '('.$keywords5.')^10 '; }else{$q_keywords .= '(*) ';}
         if($keywords3){$keywords3 = str_replace("\n", " OR ", $keywords3); $q_keywords .= 'OR ('.$keywords3.')^3 '; }else{$q_keywords .= 'OR (*) ';}
         if($keywords1){$keywords1 = str_replace("\n", " OR ", $keywords1); $q_keywords .= 'OR ('.$keywords1.')^1 '; }else{$q_keywords .= 'OR (*) ';}
         
         if($references && $references_weight){$references = str_replace("\n", " OR ", $references); $q_references .= '('.$references.')^'.$references_weight.' '; }else{$q_references = '*';}
 
-     
+        $stopwords = '"a", "about", "above", "above", "across", "after", "afterwards", "again", "against", "all", "almost", "alone", "along", "already", "also","although","always","am","among", "amongst", "amoungst", "amount",  "an", "and", "another", "any","anyhow","anyone","anything","anyway", "anywhere", "are", "around", "as",  "at", "back","be","became", "because","become","becomes", "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between", "beyond", "bill", "both", "bottom","but", "by", "call", "can", "cannot", "cant", "co", "con", "could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg", "eight", "either", "eleven","else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every", "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire", "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full", "further", "get", "give", "go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter", "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his", "how", "however", "hundred", "ie", "if", "in", "inc", "indeed", "interest", "into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly", "least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must", "my", "myself", "name", "namely", "neither", "never", "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or", "other", "others", "otherwise", "our", "ours", "ourselves", "out", "over", "own","part", "per", "perhaps", "please", "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "she", "should", "show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "something", "sometime", "sometimes", "somewhere", "still", "such", "system", "take", "ten", "than", "that", "the", "their", "them", "themselves", "then", "thence", "there", "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "they", "thickv", "thin", "third", "this", "those", "though", "three", "through", "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under", "until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what", "whatever", "when", "whence", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the"';
+
 
         //perform elasticsearch query
         $virtualjournalQuery = '{"query":
@@ -121,8 +128,9 @@ class VirtualjournalsController extends AppController {
                         "facets":{
                             "tags": {
                                 "terms": {
-                                    "field": "alchemy_concepts",
-                                    "size": 100
+                                    "field": "title",
+                                    "size": 20,
+                                    "exclude": ['.$stopwords.']
                                 }
                         }}
                     }';
@@ -135,6 +143,19 @@ class VirtualjournalsController extends AppController {
             $publicationStreamRaw = $this->CurlHTTP->Post('http://inn.ac:9200/publications/_search', $virtualjournalQuery, 'vijo', 0);
             $publicationStream = json_decode($publicationStreamRaw, 1);
             $publicationStream = $publicationStream['hits']['hits'];
+            
+            $termsFacet = json_decode($publicationStreamRaw, 1);
+            $termsFacet = $termsFacet['facets']['tags']['terms'];
+
+            foreach ($termsFacet as $term) {
+                if($i == 0){
+                    $termsFacetClean .= $term['term'];
+                }else{
+                    $termsFacetClean .= ', '.$term['term'];
+                }
+                $i++;
+            }
+
         }else{
             $publicationStream = '';
         }
@@ -152,7 +173,8 @@ class VirtualjournalsController extends AppController {
                 'belongs_to_logged_in_user' => $belongs_to_logged_in_user,
                 'created_by' =>  @$virtualjournal['Virtualjournal']['created_by'],
                 'created_by_url' => 'http://inn.ac/users/'.@$virtualjournal['Virtualjournal']['created_by'],
-                'publication_stream' => @$publicationStream
+                'publication_stream' => @$publicationStream,
+                'terms_facet' => @$termsFacetClean
             );
 
 
@@ -165,6 +187,7 @@ class VirtualjournalsController extends AppController {
     public function edit($id) {
 
         $this->Virtualjournal->id = $id;
+        $this->request->data['virtualjournal']['created_by'] = $this->Session->read('User.user.username');
 
         if ($this->Virtualjournal->save($this->request->data['virtualjournal'])) {
             $message = 'Saved';

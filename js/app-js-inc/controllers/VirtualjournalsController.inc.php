@@ -1,5 +1,5 @@
 App.VirtualjournalsIndexController = App.ApplicationController.extend({
-  sortProperties: ['created'],
+  sortProperties: ['views'],
   sortAscending: false
 });
 

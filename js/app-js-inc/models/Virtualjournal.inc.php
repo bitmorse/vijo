@@ -9,5 +9,6 @@ App.Virtualjournal = DS.Model.extend({
   contains_keywords_supplementary: DS.attr('string'),
   contains_authors_in_references: DS.attr('string'),
   contains_authors_in_references_weight: DS.attr('string'),
-  belongs_to_logged_in_user: DS.attr('string')
+  belongs_to_logged_in_user: DS.attr('string'),
+  views: DS.attr('number')
 });

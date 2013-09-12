@@ -2,6 +2,7 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
     
     loadingPublications: true,
     foundPublications: true,
+    termsFacet: [],
 
     loadPublications: function(virtualjournal_id){
       var selectedVirtualjournalId = virtualjournal_id;
@@ -11,6 +12,7 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
       self.set('content', []);
       self.set('loadingPublications', true);
       self.set('foundPublications', true);
+      self.set('termsFacet', []);
 
 
       c = $.getJSON('/api/virtualjournals/'+selectedVirtualjournalId+'.json?publicationstream=true')
@@ -19,6 +21,9 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
 
         if(json.virtualjournal.publication_stream !== null){
           var rawresults = json.virtualjournal.publication_stream;
+          var terms_facet = json.virtualjournal.terms_facet;
+          
+          self.set('termsFacet', terms_facet);
 
           for (var i = 0; i < rawresults.length; i++) {
             var e = rawresults[i];

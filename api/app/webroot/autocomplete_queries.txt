@@ -647,3 +647,38 @@
 (fribourg switzerla)^0.5 
 (fribourg switzerland)^0.5 
 (fribourg switzerland)^0.5 
+(chad)^0.5 
+(chad)^0.5 
+(chadef)^0.5 
+(chadef)^0.5 
+(chadefau)^0.5 
+(chadefau)^0.5 
+(chadefaux)^0.5 
+(inte)^0.5 
+(inter)^0.5 
+(intern)^0.5 
+(intern)^0.5 
+(interna)^0.5 
+(internat)^0.5 
+(internati)^0.5 
+(internatio)^0.5 
+(internation)^0.5 
+(international)^0.5 
+(international)^0.5 
+(international)^0.5 
+(international c)^0.5 
+(international cp)^0.5 
+(international cpn)^0.5 
+(international cp)^0.5 
+(international c)^0.5 
+(international co)^0.5 
+(international con)^0.5 
+(international conf)^0.5 
+(international confi)^0.5 
+(international confl)^0.5 
+(international confl)^0.5 
+(international confli)^0.5 
+(international confliv)^0.5 
+(international conflic)^0.5 
+(international confli)^0.5 
+(international conflict)^0.5 
