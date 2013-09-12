@@ -1,0 +1,649 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(fur)^0.5 
+(furu)^0.5 
+(furut)^0.5 
+(fur)^0.5 
+(fut)^0.5 
+(futu)^0.5 
+(futur)^0.5 
+(futuri)^0.5 
+(futuric)^0.5 
+(futurict)^0.5 
+(test)^0.5 
+(test)^0.5 
+(test te)^0.5 
+(test test)^0.5 
+(test test t)^0.5 
+(test test te)^0.5 
+(test test test)^0.5 
+(test test test)^0.5 
+(dip)^0.5 
+(dipl)^0.5 
+(diplo)^0.5 
+(diploi)^0.5 
+(diploid)^0.5 
+(diploid)^0.5 
+(diploid ge)^0.5 
+(diploid ge)^0.5 
+(diploid gen)^0.5 
+(diploid gene)^0.5 
+(diploid gen)^0.5 
+(diploid geno)^0.5 
+(diploid genom)^0.5 
+(diploid genome)^0.5 
+(i love zgorzelec)^0.5 
+(gen)^0.5 
+(geno)^0.5 
+(genom)^0.5 
+(genome)^0.5 
+(genomes)^0.5 
+(gen)^0.5 
+(geno)^0.5 
+(genome)^0.5 
+(genome)^0.5 
+(genomes)^0.5 
+(chad)^0.5 
+(chad)^0.5 
+(chade)^0.5 
+(chadef)^0.5 
+(chadefa)^0.5 
+(chadefau)^0.5 
+(chadefauy)^0.5 
+(chadefaux)^0.5 
+(chadefaux)^0.5 
+(oli)^0.5 
+(oliv)^0.5 
+(olivi)^0.5 
+(olivia)^0.5 
+(olivia)^0.5 
+(olivia wo)^0.5 
+(olivia wo)^0.5 
+(olivia woo)^0.5 
+(olivia wool)^0.5 
+(olivia woole)^0.5 
+(olivia wooley)^0.5 
+(olov)^0.5 
+(olov)^0.5 
+(oloi)^0.5 
+(oloi)^0.5 
+(olo)^0.5 
+(oli)^0.5 
+(oliv)^0.5 
+(oliv)^0.5 
+(oliva)^0.5 
+(olivi)^0.5 
+(olivia)^0.5 
+(olivia)^0.5 
+(olivia)^0.5 
+(olivia wo)^0.5 
+(olivia wo)^0.5 
+(olivia woo)^0.5 
+(olivia wool)^0.5 
+(olivia woole)^0.5 
+(olivia wooley)^0.5 
+(fra)^0.5 
+(frac)^0.5 
+(fract)^0.5 
+(fracta)^0.5 
+(fractal)^0.5 
+(fractal)^0.5 
+(fractal g)^0.5 
+(fractal gl)^0.5 
+(fractal glo)^0.5 
+(fractal glob)^0.5 
+(fractal globu)^0.5 
+(fractal globul)^0.5 
+(fractal globule)^0.5 
+(fractal globule)^0.5 
+(fractal globule)^0.5 
+(fractal globule)^1 ()^0.5 
+(fractal globule)^1 ( d)^0.5 
+(fractal globule)^1 ( d)^0.5 
+(fractal globule)^1 ( dn)^0.5 
+(fractal globule)^1 ( dna)^0.5 
+(ari)^0.5 
+(arix)^0.5 
+(ari)^0.5 
+(arx)^0.5 
+(arxi)^0.5 
+(arxi)^0.5 
+(arxiv)^0.5 
+(rel)^0.5 
+(rela)^0.5 
+(relait)^0.5 
+(relait)^0.5 
+(relai)^0.5 
+(relat)^0.5 
+(relat)^0.5 
+(relati)^0.5 
+(relativ)^0.5 
+(relativi)^0.5 
+(relativ)^0.5 
+(relativi)^0.5 
+(relativit)^0.5 
+(relativity)^0.5 
+(dna)^0.5 
+(dna)^0.5 
+(dna fg)^0.5 
+(dna fg)^0.5 
+(dna f)^0.5 
+(dna g)^0.5 
+(dna gl)^0.5 
+(dna gl)^0.5 
+(dna glo)^0.5 
+(dna glob)^0.5 
+(dna globu)^0.5 
+(dna globule)^0.5 
+(dna globule)^0.5 
+(dna globule)^1 ()^0.5 
+(dna globule)^1 ( p)^0.5 
+(dna globule)^1 ( p)^0.5 
+(dna globule)^1 ( pl)^0.5 
+(dna globule)^1 ( pls)^0.5 
+(dna globule)^1 ( plo)^0.5 
+(dna globule)^1 ( plo)^0.5 
+(dna globule)^1 ( plos)^0.5 
+(mat)^0.5 
+(math)^0.5 
+(math)^0.5 
+(mathe)^0.5 
+(mathem)^0.5 
+(mathema)^0.5 
+(mat)^0.5 
+(math)^0.5 
+(mathe)^0.5 
+(mathema)^0.5 
+(mathemat)^0.5 
+(mathemati)^0.5 
+(mathemati)^0.5 
+(mathematic)^0.5 
+(mathematical)^0.5 
+(mathematical)^0.5 
+(mathematical)^0.5 
+(mat)^0.5 
+(math)^0.5 
+(maths)^0.5 
+(tetr)^0.5 
+(ter)^0.5 
+(tet)^0.5 
+(tet)^0.5 
+(tetra)^0.5 
+(tetra)^0.5 
+(tetra p)^0.5 
+(tetra pa)^0.5 
+(tetra pak)^0.5 
+(rep)^0.5 
+(repe)^0.5 
+(repe)^0.5 
+(repec)^0.5 
+(pla)^0.5 
+(plan)^0.5 
+(plant)^0.5 
+(plants)^0.5 
+(plants)^0.5 
+(plants)^0.5 
+(bet)^0.5 
+(beta)^0.5 
+(beta)^0.5 
+(beta c)^0.5 
+(beta ca)^0.5 
+(beta car)^0.5 
+(beta caro)^0.5 
+(beta carot)^0.5 
+(beta caroti)^0.5 
+(beta carotin)^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+(beta carotin")^0.5 
+("beta carotin")^0.5 
+("beta carotin")^0.5 
+(bet)^0.5 
+(bet)^0.5 
+(beta)^0.5 
+(beta)^0.5 
+(beta c)^0.5 
+(beta car)^0.5 
+(beta car)^0.5 
+(beta caro)^0.5 
+(beta carot)^0.5 
+(beta caroti)^0.5 
+(beta carotin)^0.5 
+(beta carotin)^0.5 
+(beta carotin)^0.5 
+(beta carotin)^0.5 
+(str)^0.5 
+(strt)^0.5 
+(strto)^0.5 
+(strtot)^0.5 
+(strtoto)^0.5 
+(strtotome)^0.5 
+(strtotome)^0.5 
+(strtotom)^0.5 
+(strtoto)^0.5 
+(strtot)^0.5 
+(strtoti)^0.5 
+(strtotim)^0.5 
+(strtotime)^0.5 
+(strtotime)^0.5 
+(strtotim)^0.5 
+(strtoti)^0.5 
+(strtot)^0.5 
+(strto)^0.5 
+(com)^0.5 
+(compl)^0.5 
+(compl)^0.5 
+(comple)^0.5 
+(compley)^0.5 
+(comple)^0.5 
+(compl)^0.5 
+(compl)^0.5 
+(compl)^0.5 
+(bar)^0.5 
+(bara)^0.5 
+(barab)^0.5 
+(baraba)^0.5 
+(barabas)^0.5 
+(barabasi)^0.5 
+(test)^0.5 
+(test)^0.5 
+(test)^0.5 
+(test)^0.5 
+(tob)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tobias kuhn)^0.5 
+(tobi)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tobi)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tobi)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tobi)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias ku)^0.5 
+(tobias)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tobi)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tobi)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(tob)^0.5 
+(tobi)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias)^0.5 
+(tobias k)^0.5 
+(tobias ki)^0.5 
+(tobias kih)^0.5 
+(tobias ki)^0.5 
+(tobias k)^0.5 
+(tobias ku)^0.5 
+(tobias kuh)^0.5 
+(tobias kuhn)^0.5 
+(twi)^0.5 
+(twis)^0.5 
+(twist)^0.5 
+(twiste)^0.5 
+(wby)^0.5 
+(wny)^0.5 
+(wny)^0.5 
+(wny)^0.5 
+(wny)^0.5 
+(why)^0.5 
+(why m)^0.5 
+(why mo)^0.5 
+(why mos)^0.5 
+(why most)^0.5 
+(why most)^0.5 
+(why most)^0.5 
+(why most p)^0.5 
+(why most pu)^0.5 
+(why most pub)^0.5 
+(why most publ)^0.5 
+(why most publi)^0.5 
+(why most publiv)^0.5 
+(why most publiva)^0.5 
+(why most publiv)^0.5 
+(why most public)^0.5 
+(why most public)^0.5 
+(why most publica)^0.5 
+(why most publicat)^0.5 
+(why most publicati)^0.5 
+(why most publicati)^0.5 
+(why most publicati)^0.5 
+(res)^0.5 
+(rese)^0.5 
+(resea)^0.5 
+(reseac)^0.5 
+(resear)^0.5 
+(resear)^0.5 
+(researcj)^0.5 
+(researcj)^0.5 
+(researcj)^0.5 
+(researcj f)^0.5 
+(researcj)^0.5 
+(researcj)^0.5 
+(researc)^0.5 
+(research)^0.5 
+(research f)^0.5 
+(research f)^0.5 
+(research fi)^0.5 
+(research fin)^0.5 
+(research find)^0.5 
+(research findi)^0.5 
+(research findin)^0.5 
+(research finding)^0.5 
+(research findings)^0.5 
+(research findings)^0.5 
+(research findings a)^0.5 
+(research findings are)^0.5 
+(research findings are)^0.5 
+(research findings are)^0.5 
+(research findings are f)^0.5 
+(research findings are fa)^0.5 
+(research findings are faö)^0.5 
+(research findings are faös)^0.5 
+(research findings are faö)^0.5 
+(research findings are fa)^0.5 
+(research findings are fal)^0.5 
+(research findings are false)^0.5 
+(research findings are false)^0.5 
+(why)^0.5 
+(why)^0.5 
+(why m)^0.5 
+(why mo)^0.5 
+(why mos)^0.5 
+(why most)^0.5 
+(why most)^0.5 
+(why most p)^0.5 
+(why most pu)^0.5 
+(why most pub)^0.5 
+(why most publ)^0.5 
+(why most publs)^0.5 
+(why most publ)^0.5 
+(why most publi)^0.5 
+(why most publis)^0.5 
+(why most publise)^0.5 
+(why most publiseh)^0.5 
+(why most publise)^0.5 
+(why most publis)^0.5 
+(why most publishe)^0.5 
+(why most publishe)^0.5 
+(why most published)^0.5 
+(why most published)^0.5 
+(why most published e)^0.5 
+(why most published r)^0.5 
+(why most published re)^0.5 
+(why most published re)^0.5 
+(why most published res)^0.5 
+(why most published resa)^0.5 
+(why most published res)^0.5 
+(why most published ress)^0.5 
+(why most published resse)^0.5 
+(why most published ress)^0.5 
+(why most published rese)^0.5 
+(why most published resea)^0.5 
+(why most published resear)^0.5 
+(why most published resear)^0.5 
+(why most published researc)^0.5 
+(why most published research)^0.5 
+(why most published research)^0.5 
+(why most published research fi)^0.5 
+(why most published research fi)^0.5 
+(why most published research fin)^0.5 
+(why most published research find)^0.5 
+(why most published research findi)^0.5 
+(why most published research findin)^0.5 
+(why most published research findint)^0.5 
+(why most published research findin)^0.5 
+(why most published research findinf)^0.5 
+(why most published research findinfs)^0.5 
+(why most published research findinf)^0.5 
+(why most published research findin)^0.5 
+(why most published research finding)^0.5 
+(why most published research findings)^0.5 
+(why most published research findings)^0.5 
+(why most published research findings a)^0.5 
+(why most published research findings ar)^0.5 
+(why most published research findings are)^0.5 
+(why most published research findings are)^0.5 
+(why most published research findings are f)^0.5 
+(why most published research findings are fa)^0.5 
+(why most published research findings are fas)^0.5 
+(why most published research findings are fa)^0.5 
+(why most published research findings are fal)^0.5 
+(why most published research findings are fals)^0.5 
+(why most published research findings are false)^0.5 
+(nan)^0.5 
+(nan)^0.5 
+(nano)^0.5 
+(nanop)^0.5 
+(nanopu)^0.5 
+(nanopub)^0.5 
+(nanopubl)^0.5 
+(nanopubli)^0.5 
+(nanopublic)^0.5 
+(nanopublica)^0.5 
+(nanopublicat)^0.5 
+(nanopublicati)^0.5 
+(nanopublicatio)^0.5 
+(nanopublication)^0.5 
+(nanopublications)^0.5 
+(res)^0.5 
+(rese)^0.5 
+(resea)^0.5 
+(resear)^0.5 
+(research)^0.5 
+(research)^0.5 
+(research f)^0.5 
+(research fi)^0.5 
+(research fi)^0.5 
+(research fin)^0.5 
+(research find)^0.5 
+(research findi)^0.5 
+(research findin)^0.5 
+(research finding)^0.5 
+(research findings)^0.5 
+(research findings)^0.5 
+(research findings a)^0.5 
+(research findings are)^0.5 
+(research findings are)^0.5 
+(research findings are)^0.5 
+(research findings are f)^0.5 
+(research findings are fal)^0.5 
+(research findings are fal)^0.5 
+(research findings are fals)^0.5 
+(research findings are false)^0.5 
+(fal)^0.5 
+(fals)^0.5 
+(false)^0.5 
+(false)^0.5 
+(false d)^0.5 
+(false)^0.5 
+(false fi)^0.5 
+(false fi)^0.5 
+(false find)^0.5 
+(false find)^0.5 
+(false findi)^0.5 
+(false findin)^0.5 
+(false finding)^0.5 
+(false findings)^0.5 
+(How)^0.5 
+(How)^0.5 
+(How t)^0.5 
+(How to)^0.5 
+(How to:)^0.5 
+(How to:)^0.5 
+(How to)^0.5 
+(How to)^0.5 
+(How to)^0.5 
+(How to)^0.5 
+(How to b)^0.5 
+(How to bu)^0.5 
+(How to bui)^0.5 
+(How to buil)^0.5 
+(How to build)^0.5 
+(How to build)^0.5 
+(How to build a)^0.5 
+(How to build an)^0.5 
+(How to build an)^0.5 
+(How to build an i)^0.5 
+(How to build an in)^0.5 
+(How to build an inn)^0.5 
+(How to build an inno)^0.5 
+(How to build an innov)^0.5 
+(How to build an innova)^0.5 
+(How to build an innovat)^0.5 
+(How to build an innovati)^0.5 
+(How to build an innovatio)^0.5 
+(How to build an innovatiomn)^0.5 
+(How to build an innovatiomn)^0.5 
+(How to build an innovatiom)^0.5 
+(How to build an innovatio)^0.5 
+(How to build an innovatiom)^0.5 
+(How to build an innovatio)^0.5 
+(How to build an innovation)^0.5 
+(How to build an innovation a)^0.5 
+(How to build an innovation a)^0.5 
+(How to build an innovation ac)^0.5 
+(How to build an innovation acc)^0.5 
+(How to build an innovation acce)^0.5 
+(How to build an innovation accel)^0.5 
+(How to build an innovation accele)^0.5 
+(How to build an innovation acceler)^0.5 
+(How to build an innovation accelera)^0.5 
+(How to build an innovation accelerat)^0.5 
+(How to build an innovation accelerato)^0.5 
+(How to build an innovation accelerator)^0.5 
+(dfs)^0.5 
+(dfs)^0.5 
+(dfsds)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dfsdsg)^0.5 
+(dir)^0.5 
+(dirl)^0.5 
+(dirl)^0.5 
+(dirl)^0.5 
+(dir)^0.5 
+(dirk)^0.5 
+(dirk)^0.5 
+(dirk h)^0.5 
+(dirk he)^0.5 
+(dirk hel)^0.5 
+(dirk helbi)^0.5 
+(dirk helbi)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(tes)^0.5 
+(test)^0.5 
+(test)^0.5 
+(test)^0.5 
+(zur)^0.5 
+(zur)^0.5 
+(zuri)^0.5 
+(zurich)^0.5 
+(zurich)^0.5 
+(fri)^0.5 
+(frib)^0.5 
+(fribou)^0.5 
+(fribou)^0.5 
+(fribour)^0.5 
+(fribourg)^0.5 
+(fribourg)^0.5 
+(fribourg s)^0.5 
+(fribourg sw)^0.5 
+(fribourg swi)^0.5 
+(fribourg switz)^0.5 
+(fribourg swit)^0.5 
+(fribourg switzerl)^0.5 
+(fribourg switzer)^0.5 
+(fribourg switzerl)^0.5 
+(fribourg switzerla)^0.5 
+(fribourg switzerland)^0.5 
+(fribourg switzerland)^0.5 

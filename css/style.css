@@ -39,6 +39,10 @@ fieldset input {
 	color: #bbb;
 }
 
+.ember-select {
+	width: 210px;
+}
+
 #header .navbar-inner {
 	padding: 10px 0 0 0;
 	height: 55px;
@@ -404,7 +408,7 @@ div#wordcloud span.w1 {
 
 #searchAutosuggest li {
 	font-size: 16pt;
-	line-height: 16px;
+	line-height: 20px;
 	padding: 15px 0 15px 10px;
 }
 
@@ -460,6 +464,56 @@ div#wordcloud span.w1 {
 	margin: 0 5px 0 0;
 }
 
+/** SINGLE PUBLICATION PAGE **/
+#publication .abstract{
+  font-size:13pt;
+  line-height:21pt;
+  float: left;
+  margin: 40px 50px 0 30px;
+  text-align:justify;
+  width:60%;
+}
+
+#publication .metrics{
+	float: left;
+	margin: 40px 0 0 20px;
+	width: 250px;
+}
+
+#publication .morelikethis_publications {
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#publication .morelikethis_publications li{
+	padding: 0 0 10px 0;
+}
+
+#publication .infos {
+
+}
+
+/** vijos **/
+
+table.virtualjournals tr {
+	cursor: pointer;
+}
+
+
+table.virtualjournals tr:hover {
+	background: #efefef;
+}
+
+fieldset.virtualjournal textarea {
+	width: 400px;
+	height: 100px;
+}
+
+fieldset.virtualjournal input {
+	width: 400px !important;
+}
 
 /**PSTEPS**/
     #psteps_circle_steps_simple .psteps_circle_titles .circle-step {

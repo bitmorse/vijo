@@ -1,6 +1,6 @@
 App.SearchBoxView = Ember.TextField.extend({
 
-  keyDown: function(evt) {
+  keyUp: function(evt) {
     this.get('controller').set('isSearching', true);
     this.get('controller').search(this.get('value'));
   },
@@ -15,6 +15,9 @@ App.SearchBoxView = Ember.TextField.extend({
 
 App.SearchBoxResultsView = Ember.View.extend({
   mouseLeave: function(evt){
+    this.get('controller').set('isSearching', false); 
+  },
+  click: function(evt){
     this.get('controller').set('isSearching', false); 
   }
 });

@@ -1,14 +1,81 @@
-
 App.Publication = DS.Model.extend({
   published: DS.attr('date'),
+  altmetric: DS.attr('string'),
   title: DS.attr('string'),
   journal: DS.attr('string'),
   doi: DS.attr('string'),
   repec_url: DS.attr('string'),
   abstract: DS.attr('string'),
+  authors: DS.attr('string'),
   twitter: DS.attr('string'),
   publication_date: DS.attr('string'),
   counter_total_all: DS.attr('number'),
+  alchemy_concepts: DS.attr('string'),
+
+  authors_clean: function(){
+
+    var rawauthors = this.get('authors');
+    
+    if(rawauthors){
+      if(rawauthors.indexOf(";") !== -1){
+        //plos
+        var authors = rawauthors.replace(/;/gi, ', ');
+        return authors;
+
+      }else if(rawauthors.indexOf("{") !== -1){
+        //arxiv
+        var rawauthorsjson = jQuery.parseJSON(rawauthors);
+        return rawauthorsjson.forenames + ' ' + rawauthorsjson.keyname;
+
+      }else{
+        //others
+        return rawauthors;
+      }
+    }
+    
+
+
+  }.property('authors'),
+
+
+  altmetric_badge: function(){
+
+    if(this.get('altmetric') !== 'Not Found'){
+        var altmetricraw = this.get('altmetric');
+        var altmetric = $.parseJSON(altmetricraw); 
+        return altmetric.images.medium;
+    }else{
+        return false;
+    }
+   
+  }.property('altmetric'),
+
+  altmetric_url: function(){
+
+    if(this.get('altmetric') !== 'Not Found'){
+        var altmetricraw = this.get('altmetric');
+        var altmetric = $.parseJSON(altmetricraw); 
+        return altmetric.details_url;
+    }else{
+        return false;
+    }
+   
+  }.property('altmetric'),
+
+  altmetric_sparkline: function(){
+
+    if(this.get('altmetric') !== 'Not Found'){
+        var altmetricraw = this.get('altmetric');
+        var altmetric = $.parseJSON(altmetricraw); 
+        var sparkdata = altmetric.context.all.sparkline.join();
+
+        return "https://chart.googleapis.com/chart?cht=ls&chs=100x20&chd=t:"+sparkdata;
+    }else{
+        return false;
+    }
+
+  }.property('altmetric'),
+
 
   title_clean: function(){
     var title = this.get('title');
@@ -46,5 +113,17 @@ App.Publication = DS.Model.extend({
       return 'no url available.';
     }
 
-  }.property('doi', 'repec_url'),
+  }.property('doi', 'repec_url', 'identifiers'),
+
+  publication_date_notime: function() {
+
+    if(this.get('publication_date')){
+      var date = this.get('publication_date').split('T');
+      return date[0];
+    }else{
+      return false;
+    }
+
+  }.property('publication_date')
+
 });

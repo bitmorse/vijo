@@ -37,6 +37,8 @@ App.Router.map(function() {
     this.route('coauthors');
   });
   this.resource('virtualjournal', {path: '/virtualjournal/:virtualjournal_id'});
+  this.resource('virtualjournal_edit', {path: '/virtualjournal/:virtualjournal_id/edit'});
+  this.resource('virtualjournal_delete', {path: '/virtualjournal/:virtualjournal_id/delete'});
 });
 
 //jquery

@@ -1,16 +1,13 @@
-
 App.Virtualjournal = DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr('string'),
-  authors: DS.attr('string'),
-  discipline : DS.attr('string'),
-  title_contains: DS.attr('string'),
-  abstract_contains: DS.attr('string'),
-  papers_similar_to_author: DS.attr('string'),
-  papers_similar_to_keywords: DS.attr('string'),
-  minimum_amount_of_tweets: DS.attr('number'),
   created: DS.attr('date'),
-  institution: DS.attr('string'),
-  is_published_in: DS.attr('string'),
- 
+  created_by: DS.attr('string'),
+  created_by_url: DS.attr('string'),
+  contains_keywords_important: DS.attr('string'),
+  contains_keywords_normal: DS.attr('string'),
+  contains_keywords_supplementary: DS.attr('string'),
+  contains_authors_in_references: DS.attr('string'),
+  contains_authors_in_references_weight: DS.attr('string'),
+  belongs_to_logged_in_user: DS.attr('string')
 });

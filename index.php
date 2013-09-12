@@ -11,7 +11,6 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
 </head>
 <body>
 
@@ -22,7 +21,7 @@
           <div class="row">
 
             <div class="span3">
-              <a class="brand" href="http://vijo.inn.ac"><img src="/img/logo.png" class="logo" /></a>
+              <a class="brand" href="http://vijo.inn.ac"><img src="/img/logo.png" class="logo" /></a><a href="/#/virtualjournals/new" class="btn btn-large" style="margin: 3px 0 0 0;"><i class="icon-plus-sign"></i></a>
             </div>
             <div class="span6">
               {{view App.SearchBoxView id="search"}}
@@ -30,13 +29,15 @@
               {{#if isSearching}}
                   {{#view App.SearchBoxResultsView}}
                   <ul id="searchAutosuggest">
-
-                    <li>{{#each model}} {{title}} {{/each}}</li>
-
+                    {{#each model}}
+                    <li><a {{bindAttr href="href"}}>{{title}}</a></li>
+                    {{/each}}
+                    <!-- 
                     <li class="author"><i class="icon-user"></i><small>Author</small><a href="">Dirk Helbing</a> </li>
                     <li class="author"><i class="icon-user"></i><small>Author</small><a href="">Stefano Balietti</a> </li>
                     <li class="paper"><i class="icon-file"></i><small>Paper</small><a href="">How to create an innovation accelerator</a></li>
                     <li class="filter"><i class="icon-search"></i><small>Filter</small><a href="">Biology</a></li>
+                    -->
                   </ul>
                   {{/view}}
               {{/if}}
@@ -53,9 +54,12 @@
                   <ul id="filtersMenu" class="dropdown-menu" role="menu">
                     <li>{{#linkTo "virtualjournals.personal"}}<i class="icon-user"></i>My Publications & Related{{/linkTo}}</li>
                     <li class="divider"></li>
-                    <li><a href=""><i class="icon-reorder"></i>test</a></li>
-                    <li><a href=""><i class="icon-reorder"></i>chem</a></li>
+                    
+                    <li>{{#linkTo "virtualjournals.new"}}<i class="icon-pencil"></i>Create a virtual journal{{/linkTo}}</li>
+                    <li>{{#linkTo "virtualjournals.index"}}<i class="icon-book"></i>Browse community journals{{/linkTo}}</li>
+                    <li>{{#linkTo "virtualjournals.coauthors"}}<i class="icon-book"></i>Browse co-authors journals{{/linkTo}}</li>
 
+                    <!--
                     <li class="dropdown-submenu pull-left">
                       {{#linkTo "virtualjournals.index"}}<i class="icon-search"></i>More...{{/linkTo}}
                       <ul class="dropdown-menu">
@@ -65,11 +69,13 @@
 
                       </ul>
                     </li>
+                    -->
+
                   </ul>
                 </li>
 
                 {{#if isAuthenticated}}
-                  <li><a href="#/users/activity">&#127758;</a></li>
+                  <!-- <li><a href="#/users/activity">&#127758;</a></li> -->
                   <li><a href="#/users/me"><img src="http://www.gravatar.com/avatar/3a9358a3be54a38943a2e849ddc2b901" width="30"></a></li>
                 {{/if}}
               </ul>
@@ -126,5 +132,7 @@
 
   <script type="text/javascript" src="http://www.inn.ac/sites/all/modules/innacWidget/embed.js"></script>
   <div id="innac_widget"></div>
+
+
 </body>
 </html>

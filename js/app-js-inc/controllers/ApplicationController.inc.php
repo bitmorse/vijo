@@ -2,6 +2,7 @@ App.ApplicationController = Ember.Controller.extend({
   isSearching: false,
   isAuthenticated: localStorage.isAuthenticated,
   innacUid: localStorage.innacUid,
+  innacUsername: localStorage.innacUsername,
   innacFirstname: localStorage.innacFirstname,
   innacLastname: localStorage.innacLastname,
 
@@ -12,6 +13,10 @@ App.ApplicationController = Ember.Controller.extend({
   innacUidChanged: function(){
     localStorage.innacUid = this.get('innacUid');
   }.observes('innacUid'),
+
+  innacUsernameChanged: function(){
+    localStorage.innacUsername = this.get('innacUsername');
+  }.observes('innacUsername'),
 
   innacFirstnameChanged: function(){
     localStorage.innacFirstname = this.get('innacFirstname');
@@ -31,22 +36,31 @@ App.ApplicationController = Ember.Controller.extend({
     
     c.success(function(json){
 
-      if(json.user.uid > 0){
+      if(typeof json.user !== 'undefined'){
+        if(json.user.uid > 0){
 
-        console.log("authorized");
-        self.set('isAuthenticated', true);
-        self.set('innacUid', json.user.uid);
-        self.set('innacFirstname', json.user.firstname);
-        self.set('innacLastname', json.user.lastname);            
+          console.log("authorized");
+          self.set('isAuthenticated', true);
+          self.set('innacUid', json.user.uid);
+          self.set('innacFirstname', json.user.firstname);
+          self.set('innacLastname', json.user.lastname);            
+          self.set('innacUsername', json.user.username);            
 
-        return true;
+          return true;
 
+        }else{
+          self.set('isAuthenticated', false);
+          console.log('not authed');
+
+          return false;
+        }
       }else{
-        self.set('isAuthenticated', false);
-        console.log('not authed');
+          self.set('isAuthenticated', false);
+          console.log('not authed');
 
-        return false;
+          return false;
       }
+      
     });    
   },
 
@@ -57,13 +71,23 @@ App.ApplicationController = Ember.Controller.extend({
 
     //start searching from 3 characters
     if(searchTerm.length > 2){
-      console.log(searchTerm);
 
-      results.push(App.SearchBoxResult.create({
-        title: searchTerm
-      }));
+      c = $.getJSON('/api/publications/search/query?keywords='+searchTerm);
 
-      self.set('content', results);
+      c.success(function(jsonResult){
+
+        //go through the results and push them to our result object
+        for(var i = 0; i < jsonResult.length; i++){
+          results.push(App.SearchBoxResult.create({
+            title: jsonResult[i].title,
+            href: '/#/publication/'+jsonResult[i].id,
+          }));
+        }
+
+        self.set('isSearching', true);
+        self.set('content', results);
+      });
+
 
     }
 

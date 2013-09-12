@@ -8,6 +8,7 @@ App.VirtualjournalPublication = Ember.Object.extend({
   scopus: null,
   facebook: null,
   mendeley: null,
+  source: null,
   nature: null,
   view_count: null,
   journalref: null,
@@ -18,6 +19,17 @@ App.VirtualjournalPublication = Ember.Object.extend({
   authors: null,
   author: null,
   score: null,
+  publication_date: null,
+
+  timeago: function(){
+    if(this.get('publication_date')){
+       return "Published " + jQuery.timeago(this.get('publication_date'));
+     }else if (this.get('published')){
+       return "Published " + jQuery.timeago(this.get('published'));
+     }
+   
+  }.property("publication_date", "published"),
+
 
   is_published_in: function(){
     var journalref = this.get('journalref');
@@ -111,6 +123,6 @@ App.VirtualjournalPublication = Ember.Object.extend({
       return '...';
     }
 
-  }.property('author','authors')
+  }.property('author','authors', 'source')
 
 });
