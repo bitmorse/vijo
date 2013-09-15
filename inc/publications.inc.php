@@ -2,6 +2,28 @@
     {{outlet}}
   </script>
 
+  <script type="text/x-handlebars" data-template-name="publications/personal">
+    <h1>Your starred publications</h1>
+    <hr />
+   
+
+    {{#each publication in model}}
+    <div class="publication">
+      <h5>{{#linkTo 'publication' publication}}{{publication.title_clean}}{{/linkTo}}</h5>
+      <h6>{{publication.counter_total_all}} views | <a {{bindAttr href="publication.virtualjournal_url"}}>{{publication.journal}}</a>  | {{publication.timeago}}</h6>
+      
+      <div class="publication_content" style="display:none">
+        <p class="abstract">{{publication.abstract}}</p>
+        {{#linkTo 'publication' publication}}<img {{bindAttr src="publication.image_url"}} />{{/linkTo}}
+      </div>
+
+      <hr />
+    </div>
+    {{/each}}
+
+  </script>
+
+
   <script type="text/x-handlebars" data-template-name="publications/latest">
     <h1>Recently Published Publications</h1>
     <hr />

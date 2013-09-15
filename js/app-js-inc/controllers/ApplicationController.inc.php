@@ -91,6 +91,11 @@ App.ApplicationController = Ember.Controller.extend({
 
     }
 
+  },
+
+  connectOutlet: function(){
+    window.scrollTo(0, 0);
+    this._super.apply(this, arguments);
   }
 });
 

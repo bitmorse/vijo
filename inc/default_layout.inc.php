@@ -6,6 +6,7 @@
           <ul class="sidebarmenu">
             <li class="first"><span>Virtual Journals</span></li>
             <li><span>{{#linkTo "virtualjournals.index"}}Community Journals{{/linkTo}}</span></li>
+            <li><span>{{#linkTo "publications.personal"}}Your starred publications{{/linkTo}}</span></li>
             <li><span>{{#linkTo "virtualjournals.new"}}Create your own Journal{{/linkTo}}</span></li>
 
           </ul>

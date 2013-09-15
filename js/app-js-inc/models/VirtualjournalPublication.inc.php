@@ -1,6 +1,7 @@
 
 App.VirtualjournalPublication = Ember.Object.extend({
   id: null,
+  source: null,
   journal: null,
   title: null,
   abstract: null,
@@ -20,6 +21,49 @@ App.VirtualjournalPublication = Ember.Object.extend({
   author: null,
   score: null,
   publication_date: null,
+  alchemy_concepts: null,
+  starred_by_logged_in_user: null,
+  altmetric: null,
+
+  authors_clean: function(){
+
+    var rawauthors = this.get('authors');
+    
+    if(rawauthors){
+      if(rawauthors.indexOf(";") !== -1){
+        //plos
+        var authors = rawauthors.replace(/;/gi, ', ');
+        return authors;
+
+      }else if(rawauthors.indexOf("{") !== -1){
+        //arxiv
+        var rawauthorsjson = jQuery.parseJSON(rawauthors);
+        return rawauthorsjson.forenames + ' ' + rawauthorsjson.keyname;
+
+      }else{
+        //others
+        return rawauthors;
+      }
+    }
+
+  }.property('authors'),
+
+  title_clean: function(){
+    var title = this.get('title');
+    return title.replace(/(<([^>]+)>)/ig,"");
+  }.property('title'),
+
+  publication_date_notime: function() {
+
+    if(this.get('publication_date')){
+      var date = this.get('publication_date').split('T');
+      return date[0];
+    }else{
+      return false;
+    }
+
+  }.property('publication_date'),
+
 
   timeago: function(){
     if(this.get('publication_date')){
@@ -35,18 +79,21 @@ App.VirtualjournalPublication = Ember.Object.extend({
     var journalref = this.get('journalref');
     var journal = this.get('journal');
     var notes = this.get('notes');
+    var source = this.get('source');
 
     if(journalref){
-      return journalref;
+      return "arxiv, "+journalref;
     }else if (notes){
-      return notes;
+      return "arxiv, "+notes;
     }else if (journal){
       return journal;
+    }else if (source){
+      return source;
     }else{
       return 'no journal information';
     }
 
-  }.property('journal', 'journalref'),
+  }.property('journal', 'journalref', 'notes', 'source'),
 
   metrics: function(){
     var view_count = this.get('view_count');

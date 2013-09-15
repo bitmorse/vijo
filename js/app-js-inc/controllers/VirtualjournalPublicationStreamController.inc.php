@@ -4,7 +4,7 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
     foundPublications: true,
     termsFacet: [],
 
-    loadPublications: function(virtualjournal_id){
+    loadPublications: function(virtualjournal_id, facets){
       var selectedVirtualjournalId = virtualjournal_id;
       var self = this;
       var results = [];
@@ -14,8 +14,11 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
       self.set('foundPublications', true);
       self.set('termsFacet', []);
 
-
-      c = $.getJSON('/api/virtualjournals/'+selectedVirtualjournalId+'.json?publicationstream=true')
+      if(facets !== ''){
+        c = $.getJSON('/api/virtualjournals/'+selectedVirtualjournalId+'.json?publicationstream=true&'+facets);
+      }else{
+        c = $.getJSON('/api/virtualjournals/'+selectedVirtualjournalId+'.json?publicationstream=true');
+      }
 
       c.success(function(json) {
 
@@ -28,6 +31,10 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
           for (var i = 0; i < rawresults.length; i++) {
             var e = rawresults[i];
 
+            if(typeof e.starred_by_logged_in_user == 'undefined'){
+              e.starred_by_logged_in_user = 'icon-star-empty';
+            }
+
             results.push(App.VirtualjournalPublication.create({
               id: e._id,
               title: e._source.title,
@@ -37,6 +44,8 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
               facebook: e._source.facebook,
               scopus: e._source.scopus,
               nature: e._source.nature,
+              altmetric: e._source.altmetric,
+              alchemy_concepts: e._source.alchemy_concepts,
               mendeley: e._source.mendeley,
               view_count: e._source.counter_total_all,
               doi: e._source.doi,
@@ -49,7 +58,10 @@ App.VirtualjournalPublicationStreamController = Ember.ArrayController.create({
               authors: e._source.authors,
               author: e._source.author,
               publication_date: e._source.publication_date,
-              published: e._source.published
+              published: e._source.published,
+              virtualjournal_id: selectedVirtualjournalId,
+              starred_by_logged_in_user: e.starred_by_logged_in_user,
+              hidden_by_logged_in_user: "icon-thumbs-down"
             }));
 
             self.set('foundPublications', true);

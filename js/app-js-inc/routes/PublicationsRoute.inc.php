@@ -15,3 +15,9 @@ App.PublicationsLatestRoute = Ember.Route.extend({
     return App.Publication.find({ sort : 'latest'});
   }
 });
+
+App.PublicationsPersonalRoute = App.AuthenticatedRoute.extend({
+  model: function() {
+    return App.Publication.find({ find : 'starred'});
+  }
+});

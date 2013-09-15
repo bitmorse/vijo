@@ -16,3 +16,7 @@ App.PublicationsLatestController = Ember.ArrayController.extend({
 App.PublicationsControversialController = Ember.ArrayController.extend({
   sortProperties: ['published']
 });
+
+App.PublicationsPersonalController = Ember.ArrayController.extend({
+  sortProperties: ['id']
+});

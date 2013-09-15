@@ -682,3 +682,132 @@
 (international conflic)^0.5 
 (international confli)^0.5 
 (international conflict)^0.5 
+(mac)^0.5 
+(mach)^0.5 
+(machin)^0.5 
+(machine)^0.5 
+(machine le)^0.5 
+(machine lea)^0.5 
+(mach)^0.5 
+(machine lear)^0.5 
+(machine)^0.5 
+(machine)^0.5 
+(machine learn)^0.5 
+(machine lea)^0.5 
+(machine learni)^0.5 
+(machine learnin)^0.5 
+(machine learning)^0.5 
+(dir)^0.5 
+(dirk)^0.5 
+(tes)^0.5 
+(test)^0.5 
+(test)^0.5 
+(test)^0.5 
+(dul)^0.5 
+(duln)^0.5 
+(dulnan)^0.5 
+(dulnan)^0.5 
+(dun)^0.5 
+(are)^0.5 
+(are)^0.5 
+(are)^0.5 
+(are p)^0.5 
+(are po)^0.5 
+(are pol)^0.5 
+(are poli)^0.5 
+(are polit)^0.5 
+(are politi)^0.5 
+(are politic)^0.5 
+(are political)^0.5 
+(are political)^0.5 
+(are political)^0.5 
+(are political p)^0.5 
+(are political pr)^0.5 
+(are political pro)^0.5 
+(are political prom)^0.5 
+(are political promi)^0.5 
+(are political promis)^0.5 
+(are political promisi)^0.5 
+(are political promis)^0.5 
+(are political promises)^0.5 
+(are political promises)^0.5 
+(are political promises)^0.5 
+(are political promises i)^0.5 
+(test)^0.5 
+(test)^0.5 
+(dir)^0.5 
+(dirk)^0.5 
+(dir)^0.5 
+(dirk)^0.5 
+(dirk)^0.5 
+(dirk he)^0.5 
+(dirk hel)^0.5 
+(dirk helb)^0.5 
+(dirk helbin)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(dirk helbing)^0.5 
+(Search for publications)^1 ( researchers or places...)^0.5 
+(Search for publications)^1 ( researchers or places...)^0.5 
+(Search for publications)^1 ( researchers or places...)^0.5 
+(com)^0.5 
+(comp)^0.5 
+(compl)^0.5 
+(comple)^0.5 
+(complex)^0.5 
+(complex)^0.5 
+(vir)^0.5 
+(virt)^0.5 
+(virtu)^0.5 
+(virt)^0.5 
+(vir)^0.5 
+(inn)^0.5 
+(inno)^0.5 
+(innov)^0.5 
+(innova)^0.5 
+(innovati)^0.5 
+(innovati)^0.5 
+(innovatio)^0.5 
+(innovation)^0.5 
+(innovation)^0.5 
+(innovation a)^0.5 
+(innovation ac)^0.5 
+(innovation acc)^0.5 
+(innovation acce)^0.5 
+(innovation accel)^0.5 
+(innovation acceler)^0.5 
+(innovation acceler)^0.5 
+(innovation accelerat)^0.5 
+(innovation accelerat)^0.5 
+(innovation accelerato)^0.5 
+(innovation accelerator)^0.5 
+(tel)^0.5 
+(telo)^0.5 
+(telom)^0.5 
+(telomer)^0.5 
+(telomer)^0.5 
+(telomera)^0.5 
+(telomeras)^0.5 
+(telomerase)^0.5 
+(telomerase)^0.5 
+(inn)^0.5 
+(inno)^0.5 
+(innov)^0.5 
+(innova)^0.5 
+(innovat)^0.5 
+(innovati)^0.5 
+(innovatio)^0.5 
+(innovation)^0.5 
+(innovation)^0.5 
+(innovation a)^0.5 
+(innovation ac)^0.5 
+(innovation acc)^0.5 
+(innovation acce)^0.5 
+(innovation accel)^0.5 
+(innovation accele)^0.5 
+(innovation acceler)^0.5 
+(innovation accelera)^0.5 
+(innovation accelerat)^0.5 
+(innovation accelerato)^0.5 
+(innovation accelerator)^0.5 
+(innovation accelerator)^0.5 

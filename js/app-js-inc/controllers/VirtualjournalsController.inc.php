@@ -33,3 +33,36 @@ App.VirtualjournalDeleteController = Em.ObjectController.extend({
       this.transitionToRoute('virtualjournals.index');
     }
 });
+
+
+App.VirtualjournalController = Em.ObjectController.extend({
+  publicationSource: [{"name":"All sources", "value":"*"},{"name":"Public Library of Science", "value":"plos"},{"name":"ArXiv.org", "value":"arxiv"},{"name":"RePeC Economics", "value":"repec"}],
+
+  publicationSourceActive: [],
+
+  applyFacets: function(model){
+      var facets = 'source='+this.get('publicationSourceActive.value')+'&keyword='+this.get('refineKeyword');
+
+      App.VirtualjournalPublicationStreamController.loadPublications(model.id, facets);
+  },
+
+
+  starVIJOPublication: function(model, journal_id){
+    if(localStorage.isAuthenticated === "true"){
+      App.VirtualjournalPublicationStreamController.findProperty("id", model.id).set("starred_by_logged_in_user", "icon-star");
+      $.getJSON('/api/publications/star/'+journal_id+'/'+model.id+'.json');
+    }else{
+      window.location = "/api/users/login"; 
+    }
+  },
+
+  hideVIJOPublication: function(model, journal_id){
+    if(localStorage.isAuthenticated === "true"){
+      $.getJSON('/api/publications/hide/'+journal_id+'/'+model.id+'.json');
+      $("#"+model.id).hide();
+    }else{
+      window.location = "/api/users/login"; 
+    }
+  }
+});
+

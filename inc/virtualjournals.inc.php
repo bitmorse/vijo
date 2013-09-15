@@ -3,9 +3,6 @@
   <h1>Your co-authors have been reading...</h1>  
 </script>
 
-<script type="text/x-handlebars" data-template-name="virtualjournals/personal">
-  <h1>A virtual journal based on your papers</h1>  
-</script>
 
 
 
@@ -22,13 +19,15 @@
       <br />
       <fieldset>
         <legend>Publications <b>you</b> want in this journal</legend>
-        {{input contains_keywords_important as="text" hint="Most important keywords for your journal - Choose wisely!" label='<i class=\"icon-star\"></i><i class=\"icon-star\"></i>'}}
+        {{input contains_keywords_important as="text" hint="Most important keywords for your journal - Choose wisely! One keyword per line.</small>
+" label='<i class=\"icon-star\"></i><i class=\"icon-star\"></i>'}}
+        
         <br />
-        {{input contains_keywords_normal as="text" hint="Other keywords that may apply." label='<i class=\"icon-star\"></i>'}}
+        {{input contains_keywords_normal as="text" hint="Other keywords that may apply. One keyword per line." label='<i class=\"icon-star\"></i>'}}
         <br />
-        {{input contains_keywords_supplementary as="text" hint="Not important keywords, but why leave them out?" label='<i class=\"icon-star-half-empty\"></i>'}}
+        {{input contains_keywords_supplementary as="text" hint="Not important keywords, but why leave them out? One keyword per line." label='<i class=\"icon-star-half-empty\"></i>'}}
         <br />
-        {{input contains_authors_in_references as="text" hint="Cited authors to primarily give weight to." label='<i class=\"icon-quote-right\"></i>'}}
+        {{input contains_authors_in_references as="text" hint="Cited authors to primarily give weight to. One keyword per line." label='<i class=\"icon-quote-right\"></i>'}}
         Cited authors weight:<br/> {{view Ember.Select contentBinding="contains_authors_in_references_weights" style="width:100px"}} <span class="hint">How to rank papers that cite authors in the list above.</span>
       </fieldset>
       <br />

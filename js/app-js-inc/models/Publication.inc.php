@@ -11,6 +11,7 @@ App.Publication = DS.Model.extend({
   publication_date: DS.attr('string'),
   counter_total_all: DS.attr('number'),
   alchemy_concepts: DS.attr('string'),
+  virtualjournal_url: DS.attr('string'),
 
   authors_clean: function(){
 
@@ -32,7 +33,6 @@ App.Publication = DS.Model.extend({
         return rawauthors;
       }
     }
-    
 
 
   }.property('authors'),

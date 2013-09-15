@@ -84,6 +84,23 @@ class VirtualjournalsController extends AppController {
         $stopwords = '"a", "about", "above", "above", "across", "after", "afterwards", "again", "against", "all", "almost", "alone", "along", "already", "also","although","always","am","among", "amongst", "amoungst", "amount",  "an", "and", "another", "any","anyhow","anyone","anything","anyway", "anywhere", "are", "around", "as",  "at", "back","be","became", "because","become","becomes", "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between", "beyond", "bill", "both", "bottom","but", "by", "call", "can", "cannot", "cant", "co", "con", "could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg", "eight", "either", "eleven","else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every", "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire", "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full", "further", "get", "give", "go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter", "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his", "how", "however", "hundred", "ie", "if", "in", "inc", "indeed", "interest", "into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly", "least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must", "my", "myself", "name", "namely", "neither", "never", "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or", "other", "others", "otherwise", "our", "ours", "ourselves", "out", "over", "own","part", "per", "perhaps", "please", "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "she", "should", "show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "something", "sometime", "sometimes", "somewhere", "still", "such", "system", "take", "ten", "than", "that", "the", "their", "them", "themselves", "then", "thence", "there", "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "they", "thickv", "thin", "third", "this", "those", "though", "three", "through", "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under", "until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what", "whatever", "when", "whence", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the"';
 
 
+        //check for applied facets
+        if($_GET['source'] !== 'undefined' && isset($_GET['source']) && $_GET['source'] !== '*'){
+            $source = ',{"term":{"paper.source":"'.$_GET['source'].'"}}';
+        }else{
+            $source = "";
+        }
+
+        //check for applied facets
+        if($_GET['keyword']){
+            $keyword = 'AND ('.$_GET['keyword'].')';
+        }else{
+            $keyword = "";
+        }
+
+        
+
+
         //perform elasticsearch query
         $virtualjournalQuery = '{"query":
                         {"bool":
@@ -118,7 +135,8 @@ class VirtualjournalsController extends AppController {
                                 ],
                                 "must_not":[],
                                 "must":[
-                                    {"query_string":{"fields" : ["abstract^5", "title^2", "authors"], "query":"'.$q_keywords.'", "use_dis_max" : true}}
+                                    {"query_string":{"fields" : ["abstract^5", "title^2", "authors"], "query":"'.$q_keywords.$keyword.'", "use_dis_max" : true}}
+                                    '.$source.'
                                 ]
                             }
                         },
@@ -136,13 +154,50 @@ class VirtualjournalsController extends AppController {
                     }';
 
 
-        
-
         //dont search if not explicitly requested!
         if($_GET['publicationstream'] == 'true'){
             $publicationStreamRaw = $this->CurlHTTP->Post('http://inn.ac:9200/publications/_search', $virtualjournalQuery, 'vijo', 0);
+
+
             $publicationStream = json_decode($publicationStreamRaw, 1);
             $publicationStream = $publicationStream['hits']['hits'];
+
+
+            //mix in the starred and remove hidden publications now
+            if($this->Session->read('User.user.uid')){
+                App::import('model', 'Starreditem');
+                App::import('model', 'Hiddenitem');
+
+                $user_id = $this->Session->read('User.user.uid');
+                $virtualjournal_id = $id;
+                
+                $Starreditem = new Starreditem();
+                $Hiddenitem = new Hiddenitem();
+
+                //query for the starred/hidden items
+                $Hiddenitems = $Hiddenitem->find('list', array('fields'=>array('publication_id', 'user_id', 'virtualjournal_id'),'conditions'=>array('user_id'=>$user_id, 'virtualjournal_id' => $virtualjournal_id)));
+                $Starreditems = $Starreditem->find('list', array('fields'=>array('publication_id', 'user_id', 'virtualjournal_id'),'conditions'=>array('user_id'=>$user_id, 'virtualjournal_id' => $virtualjournal_id)));
+
+
+                //unset / change in the publicationstream
+                foreach ($publicationStream as $publication){
+                    //skip if hidden
+                    if(!array_key_exists($publication['_id'], $Hiddenitems[$virtualjournal_id])){
+                        
+                        //star full if starred
+                        if(array_key_exists($publication['_id'], $Starreditems[$virtualjournal_id])){
+                            $publication['starred_by_logged_in_user'] = "icon-star";
+                        }else{
+                            $publication['starred_by_logged_in_user'] = "icon-star-empty";
+                        }
+
+                        $publicationStreamProcessed[] = $publication;
+                    }
+                }
+            }else{
+                $publicationStreamProcessed = $publicationStream;
+            }
+
             
             $termsFacet = json_decode($publicationStreamRaw, 1);
             $termsFacet = $termsFacet['facets']['tags']['terms'];
@@ -157,7 +212,7 @@ class VirtualjournalsController extends AppController {
             }
 
         }else{
-            $publicationStream = '';
+            $publicationStreamProcessed = '';
         }
 
        
@@ -173,7 +228,7 @@ class VirtualjournalsController extends AppController {
                 'belongs_to_logged_in_user' => $belongs_to_logged_in_user,
                 'created_by' =>  @$virtualjournal['Virtualjournal']['created_by'],
                 'created_by_url' => 'http://inn.ac/users/'.@$virtualjournal['Virtualjournal']['created_by'],
-                'publication_stream' => @$publicationStream,
+                'publication_stream' => @$publicationStreamProcessed,
                 'terms_facet' => @$termsFacetClean
             );
 
@@ -326,64 +381,14 @@ class VirtualjournalsController extends AppController {
     }
 
 
-    /** EXPERIMENTAL *******/
-    /*
-    {
-
-        get all concepts
-          "query": {
-            "query_string": {
-              "query": "*"
-            }
-          },
-          "facets": {
-            "tags": {
-              "terms": {
-                "field": "alchemy_concepts",
-                "size": 100
-              }
-            }
-          }
-        }
-
-        boosted search
-        {
-          "query": {
-            "query_string": {
-              "query": "(networks)^10"
-            }
-          },
-          "facets": {
-            "tags": {
-              "terms": {
-                "field": "alchemy_concepts",
-                "size": 100
-              }
-            }
-          }
-        }
+    public function linkedin(){
 
 
-        {"query":
-            {"bool":
-                {"must":
-                    [{"term": {"paper.authors":""}},{"term":{"paper.references":""}},{"query_string":{"default_field":"_all","query":"d"}}],
-                    "must_not":[],
-                    "should":[]
-                }
-            },
-            "from":0,
-            "size":50,
-            "sort":[],
-            "facets":{
-                "tags": {
-                    "terms": {
-                        "field": "alchemy_concepts",
-                        "size": 100
-                    }
-            }}
-        }
-    */
+
+    }
+
+
+    /** EXPERIMENTAL ********/
 
     public function experimental($type = '') {
 

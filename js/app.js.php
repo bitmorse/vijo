@@ -27,6 +27,7 @@ App.Router.map(function() {
     this.route('top');
     this.route('latest');
     this.route('random');
+    this.route('personal');
   });
   this.resource('publication', {path: '/publication/:publication_id'});
 

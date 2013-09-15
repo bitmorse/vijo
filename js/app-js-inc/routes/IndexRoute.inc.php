@@ -1,5 +1,7 @@
 App.IndexRoute = Ember.Route.extend({
-  redirect: function() {
-    this.transitionTo('publications.top');
+/*  redirect: function() {
+    this.transitionTo('virtualjournals.index');
   }
+*/
+
 });

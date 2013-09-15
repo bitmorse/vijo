@@ -50,10 +50,14 @@ fieldset input {
 	background: #e47140;
 }
 
+#header .nav {
+	float:right;
+}
+
 #header .nav a {
 	color: #e7af9a;
 	font-family: 'entypo';
-	font-size: 55px;
+	font-size: 30px;
 	line-height: 30px;
 	box-shadow: none !important;
 	text-shadow: none !important;
@@ -518,8 +522,42 @@ fieldset.virtualjournal input {
 .journaltags {
 	width: 400px;
 	float:right;
-	margin: -110px 0 0 0;
+	margin: -20px 0 0 0;
 }
+
+#maincontainerwrapper {
+	border-right: solid 1px #ccc;
+	background: #F9F9F9;
+}
+
+#virtualjournalSidebar {
+	float: right;
+	width: 230px;
+	height: 100%; 
+	padding: 50px 20px 0 0;
+}
+
+
+#virtualjournalFacets {
+	position: fixed;
+	width: 150px;
+	height: 180px;
+	margin-top: 30px;
+}
+
+#virtualjournalFacets select {
+	width: 230px !important;
+}
+#virtualjournalFacets input{
+	width: 215px !important;
+}
+
+#publicationstream .star i.icon-star,#publicationstream .star i.icon-star-empty:hover, #publicationstream .star i.icon-thumbs-down:hover  { color: #e47140;}
+#publicationstream .star {font-size: 12pt; padding: 1px 10px 0 0;}
+#publicationstream .result strong {color: #0088cc;}
+#publicationstream .result {cursor: pointer;}
+#publicationstream tr td{padding: 0 0 20px 0}
+#publicationstream .star i {cursor: pointer;}
 
 /**PSTEPS**/
     #psteps_circle_steps_simple .psteps_circle_titles .circle-step {

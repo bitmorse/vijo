@@ -25,7 +25,7 @@
           <div class="row">
 
             <div class="span3">
-              <a class="brand" href="http://vijo.inn.ac"><img src="/img/logo.png" class="logo" /></a><a href="/#/virtualjournals/new" class="btn btn-large" style="margin: 3px 0 0 0;"><i class="icon-plus-sign"></i></a>
+              <a class="brand" href="http://vijo.inn.ac"><img src="/img/logo.png" class="logo" /></a><a href="/#/virtualjournals/new" class="btn btn-large" style="margin: 3px 0 0 0;"><i class="icon-plus-sign"></i>&nbsp;&nbsp;Create</a>
             </div>
             <div class="span6">
               {{view App.SearchBoxView id="search"}}
@@ -52,9 +52,17 @@
             <div class="span3">
               <ul class="nav">
                 <li>
-                  <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#/virtualjournals">
+                  {{#linkTo "virtualjournals.index"}}
+                  <i class="icon-book"></i>
+                  {{/linkTo}}
+
+                
+
+                  <!-- <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#/virtualjournals">
                   &#128214;
                   </a>
+
+
                   <ul id="filtersMenu" class="dropdown-menu" role="menu">
                     <li>{{#linkTo "virtualjournals.personal"}}<i class="icon-user"></i>My Publications & Related{{/linkTo}}</li>
                     <li class="divider"></li>
@@ -63,7 +71,7 @@
                     <li>{{#linkTo "virtualjournals.index"}}<i class="icon-book"></i>Browse community journals{{/linkTo}}</li>
                     <li>{{#linkTo "virtualjournals.coauthors"}}<i class="icon-book"></i>Browse co-authors journals{{/linkTo}}</li>
 
-                    <!--
+                    
                     <li class="dropdown-submenu pull-left">
                       {{#linkTo "virtualjournals.index"}}<i class="icon-search"></i>More...{{/linkTo}}
                       <ul class="dropdown-menu">
@@ -73,19 +81,19 @@
 
                       </ul>
                     </li>
-                    -->
+                   
 
-                  </ul>
+                  </ul> -->
+                </li>
+                <li>
+                  {{#linkTo "publications.personal"}}
+                    <i class="icon-star"></i>
+                  {{/linkTo}}
                 </li>
 
-                {{#if isAuthenticated}}
-                  <!-- <li><a href="#/users/activity">&#127758;</a></li> -->
-                  <li><a href="#/users/me"><img src="http://www.gravatar.com/avatar/3a9358a3be54a38943a2e849ddc2b901" width="30"></a></li>
-                {{/if}}
+                
               </ul>
-                <div class="dropdown">
-                 
-                </div>
+                
             </div>
 
           </div><!--/.nav-collapse -->
@@ -97,8 +105,12 @@
       {{outlet}}
      
       <div class="row-fluid">
-        <div class="span3"></div>
-        <div id="footer" class="span9"><strong>vijo</strong> virtual journal —  <a href="http://futurict.eu">FuturICT</a> | <a href="http://www.ethz.ch">ETH Zürich</a></div>
+
+        <div id="footer">  
+            A <a href="http://futurict.eu">FuturICT</a> project | <a href="http://www.soms.ethz.ch">ETH Zürich</a> | &copy 2013
+            <br/>Developed by <a href="http://sam.bitmorse.com">Sam Sulaimanov</a>
+        </div>
+
       </div>
     </div>
   </script>
