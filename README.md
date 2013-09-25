@@ -59,7 +59,6 @@ and change the respective values within.
         <td>GET</td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>List the results (publications) of a virtual journal</td>
@@ -67,7 +66,32 @@ and change the respective values within.
         <td>GET</td>
         <td></td>
         <td></td>
+    </tr>
+    
+    <tr>
+        <td>List top publications</td>
+        <td>/api/publications.json</td>
+        <td>GET</td>
+        <td></td>
         <td></td>
     </tr>
-
+    
+     <tr>
+        <td>Get a single publication</td>
+        <td>/api/publications/[publication_id].json</td>
+        <td>GET</td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Post a publication</td>
+        <td>/api/publications.json</td>
+        <td>POST</td>
+        <td>
+        Replace null with your value: 
+        {"publication":{"title":null,"abstract":null,"authors":null,"publication_date":null (UTC MongoDb Date), "source":"e.g. qscience-instance-name"}</td>
+        <td>[publication_id]</td>
+    </tr>
+    
 </table>
