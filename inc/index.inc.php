@@ -32,17 +32,19 @@
           </ul>
           <br />
 
-            <a class="btn btn-large btn-success" href="/#/virtualjournals/new">Sign up now to create</a>
-            <a class="btn btn-large" href="/#/virtualjournals">See community journals</a>
+            <a class="btn btn-large btn-success" href="/#/virtualjournals/new" onclick="javascript:_paq.push(['trackGoal', 1]);">Sign up now to create</a>
+            <a class="btn btn-large" href="/#/virtualjournals" onclick="javascript:_paq.push(['trackGoal', 2]);">See community journals</a>
         </div>
 
         <div class="span3">
           <br/>
           <br/>
           <br/>
-
+          
           <img width="195" src="/img/eth.png" alt="ethz" />
           <br/>
+          <br/>
+          <small>With publications from:</small>
           <br/>
           <img width="160" src="/img/plos.png" alt="public library of science" />
           <br/>
@@ -93,7 +95,7 @@
           </ul>
           <br />
 
-            <a class="btn btn-large btn-success" href="/#/virtualjournals/new">Sign up now to create</a>
+            <a class="btn btn-large btn-success" href="/#/virtualjournals/new" onclick="javascript:_paq.push(['trackGoal', 1]);">Sign up now to create</a>
             <a class="btn btn-large" href="/#/virtualjournals">See community journals</a>
         </div>
 

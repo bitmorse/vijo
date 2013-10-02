@@ -811,3 +811,396 @@
 (innovation accelerato)^0.5 
 (innovation accelerator)^0.5 
 (innovation accelerator)^0.5 
+(muk)^0.5 
+(muke)^0.5 
+(muker)^0.5 
+(mukerj)^0.5 
+(mukerjh)^0.5 
+(mukerjhe)^0.5 
+(mukerjhee)^0.5 
+(mukerjhee)^0.5 
+(mukerjhee)^0.5 
+(mukerjhee)^0.5 
+(mukerjhee)^0.5 
+(mukerjhee)^0.5 
+(mukerjhee)^0.5 
+(mukherjhee)^0.5 
+(mukherjhee)^0.5 
+(mukherjhee)^0.5 
+(mukherjhee)^0.5 
+(mukherjhee)^0.5 
+(mukherjee)^0.5 
+(mukherjee)^0.5 
+(mukherjee)^0.5 
+(mukherjee)^0.5 
+(mukherjee)^0.5 
+(mukherjee)^0.5 
+(agi)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agilit)^0.5 
+(agility)^0.5 
+(agility)^0.5 
+(agility s)^0.5 
+(agility su)^0.5 
+(agility sup)^0.5 
+(agility supp)^0.5 
+(agility suppl)^0.5 
+(agility supply)^0.5 
+(agility supply c)^0.5 
+(agility supply ch)^0.5 
+(agility supply)^0.5 
+(agility supply cha)^0.5 
+(agility supply chai)^0.5 
+(agility supply chain)^0.5 
+(agi)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agilit)^0.5 
+(agility)^0.5 
+(agility)^0.5 
+(agility s)^0.5 
+(agility su)^0.5 
+(agility sup)^0.5 
+(agility supp)^0.5 
+(agility suppl)^0.5 
+(agility supply)^0.5 
+(agility supply)^0.5 
+(agility supply)^0.5 
+(agility suppl)^0.5 
+(agility supp)^0.5 
+(agility sup)^0.5 
+(agility su)^0.5 
+(agility s)^0.5 
+(agility)^0.5 
+(agility a)^0.5 
+(agility ad)^0.5 
+(agility a)^0.5 
+(agility)^0.5 
+(agility i)^0.5 
+(agility in)^0.5 
+(agility in h)^0.5 
+(agility in)^0.5 
+(agility in he)^0.5 
+(agility in hea)^0.5 
+(agility in heal)^0.5 
+(agility in healt)^0.5 
+(agility in health)^0.5 
+(agility in healthc)^0.5 
+(agility in healthca)^0.5 
+(agility in healthcar)^0.5 
+(agility in healthcare)^0.5 
+(agility in healthcare)^0.5 
+(agility in healthcare s)^0.5 
+(agility in healthcare se)^0.5 
+(agility in healthcare ser)^0.5 
+(agility in healthcare serv)^0.5 
+(agility in healthcare servi)^0.5 
+(agility in healthcare servic)^0.5 
+(agility in healthcare service)^0.5 
+(agility in healthcare service)^0.5 
+(agi)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agiliy)^0.5 
+(agiliy)^0.5 
+(agiliy s)^0.5 
+(agiliy se)^0.5 
+(agiliy ser)^0.5 
+(agiliy s)^0.5 
+(agiliy se)^0.5 
+(agiliy)^0.5 
+(agiliy h)^0.5 
+(agiliy he)^0.5 
+(agiliy hea)^0.5 
+(agiliy heal)^0.5 
+(agiliy healt)^0.5 
+(agiliy health)^0.5 
+(agiliy healthc)^0.5 
+(agiliy healthca)^0.5 
+(agiliy healthcar)^0.5 
+(agiliy healthcare)^0.5 
+(agi)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agilit)^0.5 
+(agility)^0.5 
+(agility)^0.5 
+(agility h)^0.5 
+(agility he)^0.5 
+(agility hea)^0.5 
+(agility heal)^0.5 
+(agility healt)^0.5 
+(agility health)^0.5 
+(agi)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agilit)^0.5 
+(agility)^0.5 
+(agility)^0.5 
+(agility h)^0.5 
+(agility he)^0.5 
+(agility hea)^0.5 
+(agility heal)^0.5 
+(agility healt)^0.5 
+(agility health)^0.5 
+(agility healthc)^0.5 
+(agility healthca)^0.5 
+(agility healthcar)^0.5 
+(agility healthcare)^0.5 
+(agility healthcare)^0.5 
+(investigating the effect of antibiotic MIS use on developing antibiotics resistance in Egypt)^0.5 
+(agi)^0.5 
+(investigating the effect of antibiotic MIS use on developing antibiotics resistance in Egypt)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agilit)^0.5 
+(agility)^0.5 
+(agility)^0.5 
+(agility h)^0.5 
+(agility he)^0.5 
+(agility hea)^0.5 
+(agility heal)^0.5 
+(agility healt)^0.5 
+(agility health)^0.5 
+(agility healthc)^0.5 
+(agility healthca)^0.5 
+(agility healthcar)^0.5 
+(agility healthcare)^0.5 
+(agility healthcare)^0.5 
+(agility healthcare s)^0.5 
+(agility healthcare se)^0.5 
+(agility healthcare ser)^0.5 
+(agility healthcare serv)^0.5 
+(agility healthcare servi)^0.5 
+(agility healthcare servic)^0.5 
+(agility healthcare service)^0.5 
+(agu)^0.5 
+(agi)^0.5 
+(agil)^0.5 
+(agili)^0.5 
+(agility)^0.5 
+(agilit)^0.5 
+(agility)^0.5 
+(agility i)^0.5 
+(agility in)^0.5 
+(agility in)^0.5 
+(mala)^0.5 
+(malar)^0.5 
+(malari)^0.5 
+(malaria)^0.5 
+(mala)^0.5 
+(malaria)^0.5 
+(val)^0.5 
+(valu)^0.5 
+(value)^0.5 
+(value o)^0.5 
+(value of)^0.5 
+(value of d)^0.5 
+(value of da)^0.5 
+(value of data)^0.5 
+(value)^0.5 
+(value of)^0.5 
+(value of data)^0.5 
+(value of data)^0.5 
+(the)^0.5 
+(the v)^0.5 
+(the va)^0.5 
+(the val)^0.5 
+(the)^0.5 
+(the valu)^0.5 
+(the value)^0.5 
+(the value o)^0.5 
+(the value of)^0.5 
+(the value)^0.5 
+(the value of d)^0.5 
+(the value of)^0.5 
+(the value of da)^0.5 
+(the value of dat)^0.5 
+(the value of data)^0.5 
+(the value of data m)^0.5 
+(the value of data mo)^0.5 
+(the value of data mon)^0.5 
+(the value of data)^0.5 
+(the value of data mons)^0.5 
+(nat)^0.5 
+(natu)^0.5 
+(natur)^0.5 
+(nature)^0.5 
+(nature g)^0.5 
+(nature ge)^0.5 
+(nature gen)^0.5 
+(nature gene)^0.5 
+(nature)^0.5 
+(nature gener)^0.5 
+(nature gene)^0.5 
+(nature genert)^0.5 
+(nature generti)^0.5 
+(nature genert)^0.5 
+(nature genert)^0.5 
+(nature gener)^0.5 
+(nature gene)^0.5 
+(nature genet)^0.5 
+(nature geneti)^0.5 
+(nature genetic)^0.5 
+(nature genetics)^0.5 
+(nature genetics)^1 ()^0.5 
+(nature genetics)^1 ()^0.5 
+(nature genetics)^1 ( t)^0.5 
+(nature genetics)^1 ( th)^0.5 
+(nature genetics)^1 ( the)^0.5 
+(nature genetics)^1 ( the v)^0.5 
+(nature genetics)^1 ( the va)^0.5 
+(nature genetics)^1 ( the val)^0.5 
+(nature genetics)^1 ( the)^0.5 
+(nature genetics)^1 ( the valu)^0.5 
+(nature genetics)^1 ( the value)^0.5 
+(nature genetics)^1 ( the value o)^0.5 
+(nature genetics)^1 ( the value)^0.5 
+(nature genetics)^1 ( the value of)^0.5 
+(nature genetics)^1 ( the value of)^0.5 
+(nature genetics)^1 ( the value of d)^0.5 
+(nature genetics)^1 ( the value of da)^0.5 
+(nature genetics)^1 ( the value of data)^0.5 
+(nature genetics)^1 ( the value of data)^0.5 
+(can)^0.5 
+(can)^0.5 
+(cant)^0.5 
+(cant)^0.5 
+(cant f)^0.5 
+(cant fi)^0.5 
+(cant fin)^0.5 
+(cant find)^0.5 
+(cant find)^0.5 
+(cant find)^0.5 
+(cant find)^0.5 
+(tea)^0.5 
+(teac)^0.5 
+(teach)^0.5 
+(dir)^0.5 
+(dirk)^0.5 
+(dir)^0.5 
+(dirk h)^0.5 
+(dirk he)^0.5 
+(dirk)^0.5 
+(dirk h)^0.5 
+(dirk)^0.5 
+(dirk)^0.5 
+(dirk hel)^0.5 
+(dirk he)^0.5 
+(dirk helb)^0.5 
+(dirk hel)^0.5 
+(dirk helb)^0.5 
+(dirk helbin)^0.5 
+(dirk helbi)^0.5 
+(dirk helbi)^0.5 
+(dirk helbing)^0.5 
+(dirk helbin)^0.5 
+(aar)^0.5 
+(aarn)^0.5 
+(aarne)^0.5 
+(aarne r)^0.5 
+(aarne ra)^0.5 
+(aarne ran)^0.5 
+(aarne rant)^0.5 
+(aarne ranta)^0.5 
+(aarne ranta)^0.5 
+(seb)^0.5 
+(seba)^0.5 
+(seba-)^0.5 
+(seba-1)^0.5 
+(seba-15)^0.5 
+(seba-151)^0.5 
+(seba-1511)^0.5 
+(seba-151)^0.5 
+(seba-15)^0.5 
+(seba-1)^0.5 
+(seba-)^0.5 
+(seba)^0.5 
+(seb)^0.5 
+(mac)^0.5 
+(machi)^0.5 
+(machin)^0.5 
+(machine)^0.5 
+(machine l)^0.5 
+(machine le)^0.5 
+(machine lear)^0.5 
+(machine learn)^0.5 
+(machine learnin)^0.5 
+(machine learning)^0.5 
+(machine learning)^0.5 
+(Dir)^0.5 
+(Dirk)^0.5 
+(Dirk H)^0.5 
+(Dirk He)^0.5 
+(Dirk Hel)^0.5 
+(Dirk Helb)^0.5 
+(Dirk Helbin)^0.5 
+(Dirk Helbing)^0.5 
+(Dirk Helbing)^0.5 
+(appl)^0.5 
+(apple)^0.5 
+(apple)^0.5 
+(appl)^0.5 
+(apple)^0.5 
+(com)^0.5 
+(comp)^0.5 
+(compu)^0.5 
+(comput)^0.5 
+(computer)^0.5 
+(computer n)^0.5 
+(computer net)^0.5 
+(computer netw)^0.5 
+(computer netwo)^0.5 
+(computer network)^0.5 
+(computer networkin)^0.5 
+(computer networking)^0.5 
+(alg)^0.5 
+(algebra)^0.5 
+(algeb)^0.5 
+(algebra li)^0.5 
+(algebra line)^0.5 
+(algebra linea)^0.5 
+(algebra lineal)^0.5 
+(algebra linea)^0.5 
+(algebra line)^0.5 
+(algebra lin)^0.5 
+(algebra li)^0.5 
+(algebra l)^0.5 
+(algebra)^0.5 
+(algebr)^0.5 
+(algeb)^0.5 
+(alge)^0.5 
+(alg)^0.5 
+(51642d40ad89aa81926bae4f)^0.5 
+(51642d40ad89aa81926bae4f)^0.5 
+(51642d40ad89aa81926bae4f)^0.5 
+(cisc)^0.5 
+(cisco)^0.5 
+(cisco)^0.5 
+(ccn)^0.5 
+(ccna)^0.5 
+(cisc)^0.5 
+(cisco)^0.5 
+(cisco)^0.5 
+(cisco c)^0.5 
+(cisco cc)^0.5 
+(cisco ccn)^0.5 
+(cisco ccna)^0.5 
+(cci)^0.5 
+(ccie)^0.5 
+(com)^0.5 
+(comp)^0.5 
+(compu)^0.5 
+(comput)^0.5 
+(computer)^0.5 
+(computer n)^0.5 
+(computer ne)^0.5 
+(computer net)^0.5 
+(computer netw)^0.5 
+(computer netwo)^0.5 
+(computer networ)^0.5 
+(computer network)^0.5 
+(computer networki)^0.5 
+(computer networkin)^0.5 
+(computer networking)^0.5 

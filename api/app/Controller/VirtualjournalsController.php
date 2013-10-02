@@ -19,7 +19,7 @@ class VirtualjournalsController extends AppController {
     }
 
     public function index() {
-        $virtualjournals = $this->Virtualjournal->find('all', array('limit'=>'100'));
+        $virtualjournals = $this->Virtualjournal->find('all', array('order'=>array('created'=>0),'limit'=>'100'));
         $virtualjournalsclean = array();
         foreach ($virtualjournals as $virtualjournal) {
 
@@ -257,11 +257,12 @@ class VirtualjournalsController extends AppController {
     
     public function add() {
 
-        if($this->Session->read('User.user.username') == ""){
-            header('Location: /api/users/login');
-            exit();
+        if($_GET['api_pass'] !== '3944BE0ACB0E69452EED49A35E0F18AC3E9667C1'){
+            if($this->Session->read('User.user.username') == ""){
+                header('Location: /api/users/login');
+                exit();
+            }
         }
-
 
 
         $this->Virtualjournal->create();

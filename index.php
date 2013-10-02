@@ -25,7 +25,7 @@
           <div class="row">
 
             <div class="span3">
-              <a class="brand" href="http://vijo.inn.ac"><img src="/img/logo.png" class="logo" /></a><a href="/#/virtualjournals/new" class="btn btn-large" style="margin: 3px 0 0 0;"><i class="icon-plus-sign"></i>&nbsp;&nbsp;Create</a>
+              <a class="brand" href="http://vijo.inn.ac"><img src="/img/logo.png" class="logo" /></a><a href="/#/virtualjournals/new" class="btn btn-large" style="margin: 3px 0 0 0;" onclick="javascript:_paq.push(['trackGoal', 1]);"><i class="icon-plus-sign"></i>&nbsp;&nbsp;Create</a>
             </div>
             <div class="span6">
               {{view App.SearchBoxView id="search"}}
@@ -51,7 +51,7 @@
 
             <div class="span3">
               <ul class="nav">
-                <li>
+                <li onclick="javascript:_paq.push(['trackGoal', 2]);">
                   {{#linkTo "virtualjournals.index"}}
                   <i class="icon-book"></i>
                   {{/linkTo}}
@@ -85,7 +85,7 @@
 
                   </ul> -->
                 </li>
-                <li>
+                <li onclick="javascript:_paq.push(['trackGoal', 1]);">
                   {{#linkTo "publications.personal"}}
                     <i class="icon-star"></i>
                   {{/linkTo}}
@@ -128,13 +128,9 @@
   <script src="/js/lib/ember-data.rev12.js"></script>
   <script src="/js/lib/ember-easyForm-0.3.2.js"></script>
 
-  <script src="/js/app.js.php"></script>
-
   <!-- Piwik -->
   <script type="text/javascript">
     var _paq = _paq || [];
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
 
     (function() { 
       var u=(("https:" == document.location.protocol) ? "https" : "http") + "://trck.bitmorse.com/";
@@ -145,6 +141,9 @@
     })();
   </script>
   <!-- End Piwik Code -->
+
+  <script src="/js/app.js.php"></script>
+
 
   <script type="text/javascript" src="http://www.inn.ac/sites/all/modules/innacWidget/embed.js"></script>
   <div id="innac_widget"></div>

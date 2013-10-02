@@ -75,7 +75,7 @@ App.ApplicationController = Ember.Controller.extend({
       c = $.getJSON('/api/publications/search/query?keywords='+searchTerm);
 
       c.success(function(jsonResult){
-
+        
         //go through the results and push them to our result object
         for(var i = 0; i < jsonResult.length; i++){
           results.push(App.SearchBoxResult.create({
@@ -96,6 +96,31 @@ App.ApplicationController = Ember.Controller.extend({
   connectOutlet: function(){
     window.scrollTo(0, 0);
     this._super.apply(this, arguments);
-  }
+  },
+
+  //for analytics
+  currentPathChanged: function() {
+    var page;
+
+    // window.location gets updated later in the current run loop, so we will
+    // wait until the next run loop to inspect its value and make the call
+    // to track the page view
+    Ember.run.next(function() {
+      // Track the page in piwik
+      if (!Ember.isNone(_paq)) {
+        // Assume that if there is a hash component to the url then we are using
+        // the hash location strategy. Otherwise, we'll assume the history
+        // strategy.
+        page = window.location.hash.length > 0 ?
+               window.location.hash.substring(1) :
+               window.location.pathname;
+
+        _paq.push(['setDocumentTitle', page]);
+        _paq.push(["trackPageView", page]);
+        _paq.push(["enableLinkTracking"]);
+
+      }
+    });
+  }.observes('currentPath')
 });
 

@@ -17,7 +17,7 @@
       </fieldset>
       <br />
       <br />
-      <fieldset>
+      <fieldset onclick="javascript:_paq.push(['trackGoal', 3]);">
         <legend>Publications <b>you</b> want in this journal</legend>
         {{input contains_keywords_important as="text" hint="Most important keywords for your journal - Choose wisely! One keyword per line.</small>
 " label='<i class=\"icon-star\"></i><i class=\"icon-star\"></i>'}}
@@ -54,20 +54,26 @@
         <th></th>
       </tr>
       {{#each virtualjournal in model}}
-        {{#linkTo "virtualjournal" virtualjournal tagName="tr"}}
-          <td style="display:none;opacity:0.5">0 <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i></td>
-          <td><strong>{{virtualjournal.title}}</strong></td>
-          <td>{{virtualjournal.description}}</td>
-          <td>{{virtualjournal.views}}</td>
-          <td>
-            {{#if virtualjournal.belongs_to_logged_in_user}}
-            <div class="btn-group">
-              {{#linkTo "virtualjournal_edit" virtualjournal class="btn btn-small"}}<i class="icon-pencil"></i>{{/linkTo}}
-              {{#linkTo "virtualjournal_delete" virtualjournal class="btn btn-small"}}<i class="icon-remove"></i>{{/linkTo}}
-            </div>
-            {{/if}}
-          </td>
-        {{/linkTo}}
+
+        {{#if virtualjournal}}
+          {{#if virtualjournal.id}}
+            {{#linkTo "virtualjournal" virtualjournal tagName="tr"}}
+              <td style="display:none;opacity:0.5">0 <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i></td>
+              <td><strong>{{virtualjournal.title}}</strong></td>
+              <td>{{virtualjournal.description}}</td>
+              <td>{{virtualjournal.views}}</td>
+              <td>
+                {{#if virtualjournal.belongs_to_logged_in_user}}
+                <div class="btn-group">
+                  {{#linkTo "virtualjournal_edit" virtualjournal class="btn btn-small"}}<i class="icon-pencil"></i>{{/linkTo}}
+                  {{#linkTo "virtualjournal_delete" virtualjournal class="btn btn-small"}}<i class="icon-remove"></i>{{/linkTo}}
+                </div>
+                {{/if}}
+              </td>
+            {{/linkTo}}
+          {{/if}}
+        {{/if}}
+
       {{/each}}
 
 
