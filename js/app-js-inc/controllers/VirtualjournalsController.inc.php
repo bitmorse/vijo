@@ -6,7 +6,7 @@ App.VirtualjournalsIndexController = App.ApplicationController.extend({
 App.VirtualjournalsNewController = Ember.ObjectController.extend({
   submit: function(){
     this.get('store').commit();
-    this.transitionToRoute('virtualjournals.index');
+    //this.transitionToRoute('virtualjournals.index');
   },
   contains_authors_in_references_weights: [1,10,100]
 });

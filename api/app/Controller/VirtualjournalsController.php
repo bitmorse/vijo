@@ -299,6 +299,8 @@ class VirtualjournalsController extends AppController {
             'actions' => array(
                 array(
                     'create'=>array(
+                        'tag'=>'vijo',
+                        'journal'=> $this->Virtualjournal->getLastInsertID(),
                         'contains_authors_in_references' => @$this->request->data['virtualjournal']['contains_authors_in_references'],
                         'contains_keywords_important' => @$this->request->data['virtualjournal']['contains_keywords_important'],
                         'contains_keywords_normal' => @$this->request->data['virtualjournal']['contains_keywords_normal'],

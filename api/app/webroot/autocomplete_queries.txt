@@ -1204,3 +1204,202 @@
 (computer networki)^0.5 
 (computer networkin)^0.5 
 (computer networking)^0.5 
+(seba)^0.5 
+(seba)^0.5 
+(seba-)^0.5 
+(seba-1)^0.5 
+(seba-15)^0.5 
+(seba-151)^0.5 
+(seba-1511)^0.5 
+(seba-1511)^0.5 
+(eth)^0.5 
+(eth)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(ethern)^0.5 
+(etherna)^0.5 
+(ethern)^0.5 
+(ethernet)^0.5 
+(ethernet)^0.5 
+(eth)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(ethere)^0.5 
+(ether)^0.5 
+(ethe)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(eth)^0.5 
+(eth)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(ethern)^0.5 
+(ethernet)^0.5 
+(ethernet)^0.5 
+(eth)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(etg)^0.5 
+(eth)^0.5 
+(eth)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(ethern)^0.5 
+(ethernet)^0.5 
+(ethernet)^0.5 
+(eth)^0.5 
+(ethe)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(ethern)^0.5 
+(ethernet)^0.5 
+(ethernet)^0.5 
+(eth)^0.5 
+(eth)^0.5 
+(ether)^0.5 
+(ether)^0.5 
+(ethern)^0.5 
+(ethernet)^0.5 
+(ethernet)^0.5 
+(chi)^0.5 
+(chil)^0.5 
+(child)^0.5 
+(childc)^0.5 
+(childca)^0.5 
+(childcar)^0.5 
+(childcare)^0.5 
+(chi)^0.5 
+(chil)^0.5 
+(child)^0.5 
+(childc)^0.5 
+(childca)^0.5 
+(childcar)^0.5 
+(childcare)^0.5 
+(soc)^0.5 
+(soci)^0.5 
+(socio)^0.5 
+(socion)^0.5 
+(socioni)^0.5 
+(socion)^0.5 
+(sociono)^0.5 
+(socionom)^0.5 
+(socionomy)^0.5 
+(mle)^0.5 
+(mlei)^0.5 
+(mleis)^0.5 
+(mleiss)^0.5 
+(mleiss)^0.5 
+(kus)^0.5 
+(kusc)^0.5 
+(kusch)^0.5 
+(kusche)^0.5 
+(kuschel)^0.5 
+(kuscheln)^0.5 
+(kuscheln)^0.5 
+(hou)^0.5 
+(hou)^0.5 
+(hous)^0.5 
+(house)^0.5 
+(househ)^0.5 
+(househo)^0.5 
+(househol)^0.5 
+(household)^0.5 
+(household)^0.5 
+(household e)^0.5 
+(household en)^0.5 
+(household ene)^0.5 
+(household ener)^0.5 
+(household energ)^0.5 
+(household energy)^0.5 
+(household energy)^0.5 
+(hou)^0.5 
+(hous)^0.5 
+(house)^0.5 
+(househ)^0.5 
+(househl)^0.5 
+(househ)^0.5 
+(househo)^0.5 
+(househol)^0.5 
+(household)^0.5 
+(household)^0.5 
+(household e)^0.5 
+(household en)^0.5 
+(household ene)^0.5 
+(household ener)^0.5 
+(household energ)^0.5 
+(household energy)^0.5 
+(household energy)^0.5 
+(household energy c)^0.5 
+(household energy co)^0.5 
+(household energy con)^0.5 
+(household energy cons)^0.5 
+(household energy consu)^0.5 
+(household energy consum)^0.5 
+(household energy consump)^0.5 
+(household energy consumpt)^0.5 
+(household energy consumpti)^0.5 
+(household energy consumptio)^0.5 
+(household energy consumption)^0.5 
+(per)^0.5 
+(perc)^0.5 
+(per)^0.5 
+(perc)^0.5 
+(quantum key)^0.5 
+(zno)^0.5 
+(zno h)^0.5 
+(zno hi)^0.5 
+(zno hip)^0.5 
+(zno hipi)^0.5 
+(zno hipim)^0.5 
+(zno hipims)^0.5 
+(zno)^0.5 
+(zno hipims)^0.5 
+(zno)^0.5 
+(zno)^0.5 
+(zno h)^0.5 
+(zno hi)^0.5 
+(zno him)^0.5 
+(zno hi)^0.5 
+(zno hip)^0.5 
+(zno hipi)^0.5 
+(zno hipim)^0.5 
+(zno hipims)^0.5 
+(zno hipims)^0.5 
+(zno hipims)^0.5 
+(HiP)^0.5 
+(HiPI)^0.5 
+(HiPIM;)^0.5 
+(HiPIM;)^0.5 
+(HiPIM;S)^0.5 
+(HiPIM;)^0.5 
+(HiPIM)^0.5 
+(HiPIMS)^0.5 
+(HiPIMS)^0.5 
+(HiPIMS)^0.5 
+(zno)^0.5 
+(zno)^0.5 
+(zno m)^0.5 
+(zno ma)^0.5 
+(zno mag)^0.5 
+(zno magn)^0.5 
+(zno magnet)^0.5 
+(zno magnetr)^0.5 
+(zno magnetro)^0.5 
+(zno magnet)^0.5 
+(zno magnetron)^0.5 
+(zno magnetron)^0.5 
+(zno magnetron s)^0.5 
+(zno magnetron sp)^0.5 
+(zno magnetron spu)^0.5 
+(zno magnetron sput)^0.5 
+(zno magnetron sputer)^0.5 
+(zno magnetron sputer)^0.5 
+(zno magnetron sputeri)^0.5 
+(zno magnetron sputerin)^0.5 
+(zno magnetron sputering)^0.5 
+(fac)^0.5 
+(face)^0.5 
+(faceb)^0.5 
+(facebo)^0.5 
+(faceboo)^0.5 
+(facebook)^0.5 

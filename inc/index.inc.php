@@ -2,9 +2,7 @@
 
       <div class="row-fluid marketing">
         <div class="span12">
-          <h2>Information overload? Can't find the right papers?</h2>
-
-          <img  src="/img/io.jpg" alt="mess" />
+          <iframe onclick="javascript:_paq.push(['trackGoal', 4]);" src="//player.vimeo.com/video/75722905?byline=0&title=0&portrait=0&color=e47140" width="100%" height="471" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
     </div>
 

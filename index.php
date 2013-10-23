@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-  <title>vijo</title>
+  <meta name="Description" CONTENT="vijo let's you subscribe to the latest and most relevant scientific papers from PLoS, ArXiv and RePEc based on your filters. Don't let others decide what you read!">
+  
+  <title>vijo - a journal where you are the editor</title>
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
   <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
